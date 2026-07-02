@@ -1,0 +1,10 @@
+# Ignore temp/backup files
+backups/
+*.bak
+*.pyc
+__pycache__/
+.tempmediaStorage/
+.system_generated/
+mcp.json
+*.log
+scratch/

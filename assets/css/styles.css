@@ -1,0 +1,408 @@
+/* Darker blue footer theme (text white) */
+        .site-footer { background: linear-gradient(180deg,#007a2d 0%,#004d1d 100%); }
+        .site-footer h4 { color: #ffffff; }
+        .site-footer a { color: #e8f5e9; }
+        .site-footer a:hover { color: #ffffff; text-decoration: underline; }
+        .site-footer .contact-icon { color: #86efac; }
+        .site-footer .muted { color: #d1fae5; }
+.color-swatch-btn.active {
+    transform: scale(1.05);
+    border: 2px solid #009639;
+    box-shadow: 0 10px 25px rgba(0,150,57,0.25);
+    background: white;
+}
+.slide{
+    opacity:0;
+    transition:1s ease;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:rgba(255,255,255,.3);
+    transition:.3s;
+}
+
+.dot.active{
+    background:#86efac;
+    transform:scale(1.3);
+}
+.showroom-container {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .showroom-container *, .showroom-container ::before, .showroom-container ::after {
+            box-sizing: border-box;
+        }
+        .mySwiper {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-slide {
+            height: auto;
+            display: block;
+        }
+        /* Membaiki isu paparan titik navigasi pada tema gelap */
+        .mySwiper .swiper-pagination-bullet {
+            background: #ffffff !important;
+            opacity: 0.3;
+        }
+        .mySwiper .swiper-pagination-bullet-active {
+            background: #009639 !important; /* Changed to light blue */
+            opacity: 1;
+            width: 24px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+        .color-swatch { transition: border-color .2s, transform .2s; }
+        .color-swatch.selected { transform: scale(1.05); border-color: #009639 !important; box-shadow: 0 0 0 4px rgba(0,150,57,0.15); }
+.swiper { width: 100%; height: 500px; border-radius: 20px; }
+        .swiper-slide { display: flex; align-items: center; justify-content: center; }
+        .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Custom Social Icons style (from Uiverse.io by PriyanshuGupta28, modified for FA) */
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.example-2 .icon-content {
+  margin: 0 8px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #a0aec0;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 25px 0px rgba(0,0,0,0.15);
+  border-color: transparent;
+}
+.example-2 .icon-content a i {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover i {
+  color: white;
+  transform: scale(1.1);
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="tiktok"] .filled,
+.example-2 .icon-content a[data-social="tiktok"] ~ .tooltip {
+  background-color: #010101;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #1877f2;
+}
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #25d366;
+}
+
+/* Uiverse inspired custom buttons and transitions */
+.uiverse-btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.uiverse-btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: all 0.6s ease;
+}
+
+.uiverse-btn-glow:hover::before {
+  left: 100%;
+}
+
+.uiverse-btn-glow:active {
+  transform: scale(0.98);
+}
+
+.category-tab {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.uiverse-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.uiverse-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 50px -10px rgba(15, 23, 42, 0.12);
+}
+
+.img-zoom-hover {
+  overflow: hidden;
+}
+
+.img-zoom-hover img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.img-zoom-hover:hover img {
+  transform: scale(1.05);
+}
+
+.category-tab.active {
+  background-color: white !important;
+  color: #0f172a !important;
+  border: 1.5px solid #0f172a !important;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Isometric Socials Card */
+.card-iso {
+  max-width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05),
+    0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.card-iso:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.card-iso ul {
+  padding: 1rem 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (min-width: 640px) {
+  .card-iso ul {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+  }
+}
+
+.card-iso ul li {
+  cursor: pointer;
+}
+
+.card-iso .svg {
+  transition: all 0.3s;
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  color: #009639;
+  fill: currentColor;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2),
+    inset 0 0 5px rgba(255, 255, 255, 0.3), 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card-iso .text {
+  opacity: 0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: all 0.3s;
+  color: #009639;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  z-index: 9999;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Isometric projection hover effects */
+.iso-pro {
+  transition: 0.5s;
+}
+
+.iso-pro:hover a > .svg {
+  transform: translate(15px, -15px);
+  background: #009639;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 150, 57, 0.4);
+}
+
+.iso-pro:hover .text {
+  opacity: 1;
+  transform: translate(-50%, -55px);
+}
+
+@media (min-width: 640px) {
+  .card-iso .text {
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .iso-pro:hover .text {
+    transform: translate(75px, -4px) skew(-5deg);
+  }
+}
+
+.iso-pro span {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1.5px solid #009639;
+  box-shadow: inset 0 0 20px rgba(0, 150, 57, 0.2),
+    0 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 60px;
+  width: 60px;
+}
+
+.iso-pro:hover span {
+  opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+
+/* Mobile-Friendly Color Swatch Visualizer */
+@media (max-width: 1023px) {
+  /* Select and convert the swatches container to a horizontal wrapped row */
+  div:has(> .color-btn), 
+  div:has(> .color-swatch-btn),
+  .showroom-container .flex-col.gap-3,
+  .w-full.lg\:w-2\/5 .flex-col,
+  .w-full.lg\:w-2\/5 > div.flex-col {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Make individual swatch buttons compact circles */
+  .color-btn, .color-swatch-btn {
+    padding: 0.25rem !important;
+    border-radius: 9999px !important;
+    border: 2px solid #e2e8f0 !important;
+    background: white !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+  }
+
+  /* Force the inner colored circle to size appropriately and center */
+  .color-btn div, .color-swatch-btn div {
+    width: 36px !important;
+    height: 36px !important;
+    margin: 0 !important;
+    border-width: 2px !important;
+  }
+
+  /* Hide textual color name labels on mobile to save vertical space */
+  .color-btn span, .color-swatch-btn span {
+    display: none !important;
+  }
+
+  /* Highlight active/selected swatch with Perodua green border and a slight zoom scaling */
+  .color-btn.active, .color-swatch-btn.active,
+  .color-btn[class*="ring-2"], .color-swatch-btn[class*="ring-2"] {
+    border-color: #009639 !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 0 3px rgba(0, 150, 57, 0.25) !important;
+  }
+}

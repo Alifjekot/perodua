@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perodua Axia - Ahmad Farhan Sales Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    
+
+    <script src="../assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brandSlate to-slate-900 text-white text-xs py-2.5 px-4 text-center sm:text-right sm:px-8 font-medium tracking-wide shadow-sm">
+        <span class="inline-flex items-center mr-4">
+            <i class="fa-solid fa-location-dot text-perodua mr-1.5 animate-pulse"></i> Glenmarie Branch
+        </span>
+        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
+            <i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5 text-sm"></i> Contact Advisor
+        </a>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="../index.html" class="flex-shrink-0 transition-transform hover:scale-105 duration-200">
+                        <img src="../assets/img/logo-perodua.png" alt="Perodua Logo" class="h-10 w-auto object-contain"
+                            onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Perodua_logo.svg/512px-Perodua_logo.svg.png'">
+                    </a>
+                    <div class="hidden lg:block pl-4 border-l-2 border-slate-200">
+                        <span class="font-black text-lg block text-slate-900 tracking-tight leading-none">Glenmarie Sales</span>
+                        <span class="text-[10px] text-peroduaDark font-bold uppercase tracking-widest mt-1 block">Authorized Branch</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Home</a>
+
+                    <div class="relative group">
+                        <button class="text-peroduaDark font-bold text-sm tracking-wide flex items-center space-x-1 py-2 focus:outline-none transition-colors duration-200 border-b-2 border-peroduaDark">
+                            <span>Our Cars</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 transform scale-95 group-hover:scale-100">
+                            <a href="alza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> NEW PERODUA ALZA</a>
+                            <a href="ativa.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ATIVA</a>
+                            <a href="myvi.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA MYVI</a>
+                            <a href="aruz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ARUZ</a>
+                            <a href="axia.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA AXIA</a>
+                            <a href="bezza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA BEZZA</a>
+                            <a href="traz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA TRAZ</a>
+                        </div>
+                    </div>
+
+                    <a href="../feedback.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Feedback Customer</a>
+                    <a href="../about.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">About Me</a>
+
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+                        class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 transition duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>019-365 0861</span>
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-800 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors focus:outline-none">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Menu</span>
+                            <i class="fa-solid fa-bars text-lg text-peroduaDark"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl transition-all duration-300 animate-fadeIn">
+            <a href="../index.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Home</a>
+            <a href="../feedback.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Feedback Customer</a>
+            <a href="../about.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">About Me</a>
+            <div class="text-[10px] text-slate-400 font-bold tracking-widest uppercase pt-2">Car Model Options</div>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="alza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Alza</a>
+                <a href="ativa.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Ativa</a>
+                <a href="myvi.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Myvi</a>
+                <a href="aruz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Aruz</a>
+                <a href="axia.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Axia</a>
+                <a href="bezza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
+                <a href="traz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
+            </div>
+            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
+            </a>
+        </div>
+    </header>
+
+   <!-- PREMIUM QVE LAUNCH SECTION -->
+<section class="relative overflow-hidden bg-white py-24">
+
+    <!-- cinematic luxury glow -->
+    <div class="absolute inset-0">
+        <div class="absolute top-[-220px] left-[-220px] w-[600px] h-[600px] bg-emerald-300/30 blur-[180px] rounded-full"></div>
+        <div class="absolute bottom-[-220px] right-[-220px] w-[600px] h-[600px] bg-blue-200/30 blur-[200px] rounded-full"></div>
+    </div>
+
+    <!-- top thin premium line -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+        <div class="flex justify-center mb-10">
+            <div class="w-28 h-[2px] bg-gradient-to-r from-transparent via-perodua to-transparent"></div>
+        </div>
+
+        <!-- badge -->
+        <div class="text-center mb-6">
+            <span class="inline-block px-6 py-2 rounded-full text-xs tracking-[0.35em] font-bold uppercase
+                         bg-sky-50 text-peroduaDark border border-sky-100 shadow-sm">
+                All-New Model Launch
+            </span>
+        </div>
+
+        <!-- TITLE -->
+        <h1 class="text-center text-4xl md:text-6xl font-black text-gray-900 tracking-tight uppercase leading-tight">
+            PERODUA QVE
+        </h1>
+
+        <!-- SUBTITLE -->
+        <p class="text-center text-gray-600 mt-6 max-w-3xl mx-auto text-lg leading-relaxed">
+            A new generation of modern driving experience — combining refined design, advanced comfort,
+            and intelligent performance. Built to redefine everyday mobility.
+        </p>
+
+        <!-- FEATURE HIGHLIGHTS -->
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+
+            <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="text-perodua text-2xl mb-3">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">All-New Design</h3>
+                <p class="text-sm text-gray-500 mt-2">Modern exterior styling built for elegance and presence.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="text-perodua text-2xl mb-3">
+                    <i class="fa-solid fa-gauge-high"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Smart Performance</h3>
+                <p class="text-sm text-gray-500 mt-2">Efficient engine with smooth and responsive driving feel.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="text-perodua text-2xl mb-3">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="font-bold text-gray-900">Premium Comfort</h3>
+                <p class="text-sm text-gray-500 mt-2">Enhanced interior comfort designed for long journeys.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    <!-- Color Selection Section -->
+<!-- ULTRA PREMIUM QVE COLOR SECTION -->
+<section class="relative bg-white py-24 overflow-hidden">
+
+    <!-- soft ice blue background glow -->
+    <div class="absolute inset-0">
+        <div class="absolute top-[-250px] left-[-250px] w-[700px] h-[700px] bg-sky-200/30 blur-[200px] rounded-full"></div>
+        <div class="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-slate-300/20 blur-[220px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <!-- HEADER -->
+        <div class="text-center mb-16">
+            <p class="text-perodua text-xs tracking-[0.4em] font-bold uppercase">
+                Exterior Color Studio
+            </p>
+
+            <h2 class="text-4xl md:text-6xl font-black text-slate-900 mt-4 tracking-tight">
+                QVE COLOR EXPERIENCE
+            </h2>
+
+            <div class="w-20 h-[2px] bg-gradient-to-r from-emerald-300 to-slate-300 mx-auto mt-6"></div>
+        </div>
+
+        <!-- MAIN LAYOUT (NEW PREMIUM STYLE) -->
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <!-- LEFT: COLOR DOTS ONLY (MINIMAL LUXURY) -->
+            <div class="lg:col-span-3 space-y-6">
+
+                <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">
+                    Select Color
+                </p>
+
+                <!-- ICE BLUE -->
+                <button onclick="changeCarColor('Ice Blue','../assets/img/qve-blue.png','#7dd3fc',this)"
+                    class="group w-full flex items-center gap-4 p-4 rounded-2xl border border-slate-200 hover:border-emerald-300 transition bg-white shadow-sm">
+
+                    <div class="w-10 h-10 rounded-full bg-emerald-300 border-4 border-white shadow-md"></div>
+
+                    <div class="text-left">
+                        <p class="font-bold text-slate-800 group-hover:text-perodua">Ice Blue</p>
+                        <p class="text-xs text-slate-400">Signature Premium Tone</p>
+                    </div>
+
+                </button>
+
+                <!-- CAVIAR GREY -->
+                <button onclick="changeCarColor('Caviar Grey','../assets/img/qve-grey.png','#3f4a55',this)"
+                    class="group w-full flex items-center gap-4 p-4 rounded-2xl border border-slate-200 hover:border-slate-400 transition bg-white shadow-sm">
+
+                    <div class="w-10 h-10 rounded-full bg-slate-600 border-4 border-white shadow-md"></div>
+
+                    <div class="text-left">
+                        <p class="font-bold text-slate-800 group-hover:text-slate-600">Caviar Grey</p>
+                        <p class="text-xs text-slate-400">Deep Luxury Finish</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+            <!-- CENTER: CAR (FOCUS HERO) -->
+            <div class="lg:col-span-6 flex justify-center">
+
+                <div class="relative">
+
+                    <!-- glow ring -->
+                    <div class="absolute inset-0 bg-sky-200/30 blur-[120px] rounded-full"></div>
+
+                    <div class="relative bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-[0_40px_120px_rgba(15,23,42,0.12)]">
+
+                        <img id="main-car-image"
+                             src="../assets/img/qve-blue.png"
+                             class="w-full max-h-[420px] object-contain transition duration-500"
+                             alt="QVE">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT: LIVE INFO PANEL -->
+            <div class="lg:col-span-3 space-y-6">
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <p class="text-xs text-slate-500 uppercase tracking-widest">Selected Color</p>
+
+                    <div class="flex items-center gap-3 mt-3">
+                        <div id="color-indicator"
+                             class="w-4 h-4 rounded-full bg-emerald-300"></div>
+
+                        <p id="color-name-display" class="font-bold text-slate-800">
+                            Ice Blue
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <p class="text-xs text-slate-500 uppercase tracking-widest">Model</p>
+                    <p class="font-bold text-slate-900 mt-2">Perodua QVE 2026</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-gradient-to-r from-sky-50 to-white border border-slate-100">
+                    <p class="text-xs text-slate-500 uppercase tracking-widest">Highlight</p>
+                    <p class="font-bold text-slate-900 mt-2">Premium New Launch</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+            <!-- Showroom Section -->
+           <section class="relative bg-[#f7fafc] py-24 overflow-hidden rounded-[40px] my-10">
+
+    <!-- ICE BLUE ambient glow -->
+    <div class="absolute inset-0">
+        <div class="absolute top-[-250px] left-[-250px] w-[700px] h-[700px] bg-sky-200/40 blur-[220px] rounded-full"></div>
+        <div class="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-slate-300/30 blur-[240px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+
+        <!-- HEADER -->
+        <div class="text-center mb-16">
+
+            <span class="inline-block px-6 py-2 rounded-full text-xs font-bold tracking-[0.4em]
+                         bg-white border border-sky-200 text-perodua shadow-sm">
+                PREMIUM LINEUP
+            </span>
+
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 mt-6">
+                PERODUA QVE 2026
+            </h1>
+
+            <div class="w-24 h-[2px] bg-emerald-300 mx-auto mt-6 rounded-full"></div>
+
+            <p class="text-slate-500 mt-6 max-w-2xl mx-auto">
+                A refined SUV experience combining Ice Blue elegance and Caviar Grey sophistication.
+            </p>
+
+        </div>
+
+        <!-- SINGLE PREMIUM CARD -->
+        <div class="grid lg:grid-cols-2 gap-14 items-center bg-white rounded-[35px] p-10 border border-slate-100 shadow-[0_50px_140px_rgba(14,165,233,0.10)]">
+
+            <!-- LEFT: CAR VISUAL -->
+            <div class="relative flex justify-center items-center">
+
+                <!-- glow -->
+                <div class="absolute w-[400px] h-[400px] bg-sky-200/40 blur-[140px] rounded-full"></div>
+
+                <div class="relative bg-gradient-to-br from-white to-sky-50 rounded-[30px] p-10 border border-slate-100">
+
+                    <img src="../assets/img/qve-blue.png"
+                         class="w-full max-w-[450px] object-contain drop-shadow-xl transition duration-500"
+                         alt="Aruz">
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT: DETAILS -->
+            <div class="space-y-8">
+
+                <!-- badge -->
+                <span class="text-xs font-bold tracking-[0.3em] text-perodua uppercase">
+                    Base Variant
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900">
+                    QV-E (Baas)
+                </h2>
+
+                <p class="text-slate-500">
+                    Battery-as-a-service (Baas)
+                </p>
+
+                <!-- pricing -->
+                <div class="space-y-3 text-sm">
+
+                    <div class="mt-5 space-y-2 text-xs sm:text-sm">
+
+    <!-- Next Selling Price -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-semibold uppercase tracking-wider">
+            Next Selling Price
+        </span>
+        <span class="font-bold text-slate-900">RM 69,551.00</span>
+    </div>
+
+    <!-- JPJ / Road Tax -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            EV JPJ Plate / Road Tax (1 Year)
+        </span>
+        <span class="font-medium text-slate-900">RM 98.00 / EXTEMPTED</span>
+    </div>
+
+    <!-- Registration -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            Registration Fee (Private)
+        </span>
+        <span class="font-medium text-slate-900">RM 300.00</span>
+    </div>
+
+    <!-- Insurance -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+           Price Without Insurance 
+        </span>
+        <span class="font-medium text-slate-900">RM 63,499.00</span>
+    </div>
+
+    <!-- HP Fee -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            H.P Endorsement Fee
+        </span>
+        <span class="font-medium text-slate-900">RM 50.00</span>
+    </div>
+
+    <!-- OTR (ONLY BLUE) -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-bold uppercase tracking-wider">
+            OTR Price
+        </span>
+        <span class="font-black text-perodua text-base">
+            RM 65,999.00
+        </span>
+    </div>
+
+    <!-- Deposit -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            DownPayment 
+        </span>
+        <span class="font-medium text-slate-900">RM 6,699.00</span>
+    </div>
+
+    <!-- Loan -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            Loan (90%)
+        </span>
+        <span class="font-medium text-slate-900">
+            RM 59,300.00
+        </span>
+    </div>
+
+</div>
+                <!-- monthly -->
+                <div class="grid grid-cols-2 gap-4">
+
+                  
+
+                    <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 text-center">
+                        <p class="text-xs text-perodua font-bold uppercase">Monthly</p>
+                        <p class="text-2xl font-black text-slate-900">RM 868</p>
+                           <p class="text-xs text-slate-500 font-medium">
+                Including Battery Leasing
+            </p>
+                        <p class="text-xs text-slate-400">9 Years</p>
+                    </div>
+
+                
+                    </div>
+
+               
+
+                <!-- buttons -->
+                <div class="grid grid-cols-2 gap-4 mt-5">
+
+    <!-- VIEW -->
+    <a href="qve-details.html"
+       class="relative z-20 flex items-center justify-center py-3 rounded-full border border-slate-200 bg-white text-slate-900 font-bold hover:bg-slate-50 transition shadow-sm">
+        View Details
+    </a>
+
+    <!-- BOOK -->
+    <a href="https://wa.me/60193650861"
+       class="relative z-20 flex items-center justify-center py-3 rounded-full bg-perodua text-white font-bold hover:bg-peroduaDark transition shadow-md">
+        Book Now
+    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="absolute inset-0">
+        <div class="absolute top-[-250px] left-[-250px] w-[700px] h-[700px] bg-sky-200/40 blur-[220px] rounded-full"></div>
+        <div class="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-slate-300/30 blur-[240px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+
+     
+
+        <!-- SINGLE PREMIUM CARD -->
+        <div class="grid lg:grid-cols-2 gap-14 items-center bg-white rounded-[35px] p-10 border border-slate-100 shadow-[0_50px_140px_rgba(14,165,233,0.10)]">
+
+            <!-- LEFT: CAR VISUAL -->
+            <div class="relative flex justify-center items-center">
+
+                <!-- glow -->
+                <div class="absolute w-[400px] h-[400px] bg-sky-200/40 blur-[140px] rounded-full"></div>
+
+                <div class="relative bg-gradient-to-br from-white to-sky-50 rounded-[30px] p-10 border border-slate-100">
+
+                    <img src="../assets/img/qve-grey.png"
+                         class="w-full max-w-[450px] object-contain drop-shadow-xl transition duration-500"
+                         alt="Aruz">
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT: DETAILS -->
+            <div class="space-y-8">
+
+                <!-- badge -->
+                <span class="text-xs font-bold tracking-[0.3em] text-perodua uppercase">
+                    Base Variant
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900">
+                    QV-E FULL PURCHASE
+                </h2>
+
+                <p class="text-slate-500">
+                    Affordable • Fuel Efficient • Family Comfort QVE
+                </p>
+
+                <!-- pricing -->
+                <div class="space-y-3 text-sm">
+
+                  <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-semibold uppercase tracking-wider">
+            Next Selling Price
+        </span>
+        <span class="font-bold text-slate-900">RM 93,551.00</span>
+    </div>
+
+    <!-- JPJ / Road Tax -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            EV JPJ Plate / Road Tax (1 Year)
+        </span>
+        <span class="font-medium text-slate-900">RM 98.00 / EXTEMPTED</span>
+    </div>
+
+    <!-- Registration -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            Registration Fee (Private)
+        </span>
+        <span class="font-medium text-slate-900">RM 300.00</span>
+    </div>
+
+    <!-- Insurance -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+           Price Without Insurance 
+        </span>
+        <span class="font-medium text-slate-900">RM 87,499.00</span>
+    </div>
+
+    <!-- HP Fee -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            H.P Endorsement Fee
+        </span>
+        <span class="font-medium text-slate-900">RM 50.00</span>
+    </div>
+
+    <!-- OTR (ONLY BLUE) -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-bold uppercase tracking-wider">
+            OTR Price
+        </span>
+        <span class="font-black text-perodua text-base">
+            RM 87,499.00
+        </span>
+    </div>
+
+    <!-- Deposit -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            DownPayment
+        </span>
+        <span class="font-medium text-slate-900">RM 9,099.00</span>
+    </div>
+
+    <!-- Loan -->
+    <div class="flex justify-between border-b border-slate-100 pb-2">
+        <span class="text-slate-900 font-medium">
+            Loan (90%)
+        </span>
+        <span class="font-medium text-slate-900">
+            RM 81,700.00
+        </span>
+    </div>
+
+</div>
+
+                    
+               <!-- monthly -->
+                <div class="grid grid-cols-2 gap-4">
+
+                  
+
+                    <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 text-center">
+                        <p class="text-xs text-perodua font-bold uppercase">Monthly</p>
+                        <p class="text-2xl font-black text-slate-900">RM 899</p>
+                           <p class="text-xs text-slate-500 font-medium">
+                Including Battery Leasing
+            </p>
+                        <p class="text-xs text-slate-400">9 Years</p>
+                    </div>
+
+                    </div>
+<!-- buttons -->
+                <div class="grid grid-cols-2 gap-4 mt-5">
+
+    <!-- VIEW -->
+    <a href="qve-details.html"
+       class="relative z-20 flex items-center justify-center py-3 rounded-full border border-slate-200 bg-white text-slate-900 font-bold hover:bg-slate-50 transition shadow-sm">
+        View Details
+    </a>
+
+    <!-- BOOK -->
+    <a href="https://wa.me/60193650861"
+       class="relative z-20 flex items-center justify-center py-3 rounded-full bg-perodua text-white font-bold hover:bg-peroduaDark transition shadow-md">
+        Book Now
+    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="absolute inset-0">
+        <div class="absolute top-[-250px] left-[-250px] w-[700px] h-[700px] bg-sky-200/40 blur-[220px] rounded-full"></div>
+        <div class="absolute bottom-[-250px] right-[-250px] w-[700px] h-[700px] bg-slate-300/30 blur-[240px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+
+     
+
+
+    <div class="relative overflow-hidden rounded-[45px] bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+
+        <!-- Glow -->
+        <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-emerald-500/20 blur-[140px] rounded-full"></div>
+        <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-emerald-500/10 blur-[140px] rounded-full"></div>
+
+        <!-- Content -->
+        <div class="px-8 md:px-16 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+
+            <!-- LEFT -->
+            <div class="relative z-10 lg:w-2/3 text-center lg:text-left">
+
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/10 text-emerald-300 text-xs font-bold tracking-[3px] uppercase mb-6">
+                    <i class="fa-solid fa-gift"></i>
+                    Special Promotion
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
+                    Amazing Deals &
+                    <span class="bg-gradient-to-r from-perodua to-cyan-400 bg-clip-text text-transparent">
+                        Free Gifts
+                    </span>
+                </h2>
+
+                <p class="text-slate-300 mt-6 text-lg max-w-2xl">
+                    Every Perodua car booking with Ahmad Farhan will receive exclusive free gifts.
+                    We also accept <span class="text-white font-bold bg-emerald-500/20 px-2 py-1 rounded-lg">TRADE-IN</span>
+                    with high value for your old car.
+                </p>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
+
+                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
+                        🎁 Free Gifts
+                    </span>
+
+                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
+                        🚗 Trade-In Available
+                    </span>
+
+                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
+                        ⚡ Fast Approval
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="relative z-10 lg:w-1/3 flex justify-center lg:justify-end">
+
+                <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua."
+                   class="group relative w-full sm:w-auto flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-400 to-emerald-600 text-white font-black py-5 px-10 rounded-full shadow-[0_25px_80px_rgba(16,185,129,0.45)] hover:scale-105 transition-all duration-500">
+
+                    <i class="fa-brands fa-whatsapp text-3xl group-hover:rotate-12 transition"></i>
+
+                    <div class="text-left">
+                        <div class="text-xs opacity-80">WhatsApp Now</div>
+                        <div class="text-lg">019-365 0861</div>
+                    </div>
+
+                    <!-- shine -->
+                    <span class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-100 transition"></span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+
+    <!-- Swiper JS & Visualizer Script -->
+
+<footer class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white mt-auto">
+
+
+<!-- Background Glow -->
+<div class="absolute top-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+
+<div class="relative max-w-7xl mx-auto px-6 py-20">
+
+    <!-- Top Area -->
+    <div class="grid lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+
+            <div class="inline-flex items-center gap-3 mb-6">
+
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-r from-perodua to-perodua flex items-center justify-center">
+                    <i class="fa-solid fa-car-side text-white"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-black text-xl">Farhan Perodua</h3>
+                    <p class="text-emerald-300 text-sm">Authorized Sales Advisor</p>
+                </div>
+
+            </div>
+
+            <p class="text-slate-400 leading-relaxed text-sm">
+                Helping customers own their dream Perodua with an easy process,
+                fast and reliable. From booking to car delivery,
+                Everything is handled professionally.
+            </p>
+
+        </div>
+
+        <!-- Cars -->
+        <div>
+
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Perodua Models
+            </h4>
+
+            <ul class="space-y-3 text-slate-400">
+
+                <li><a href="ativa.html" class="hover:text-emerald-300 transition">Perodua Ativa</a></li>
+                <li><a href="myvi.html" class="hover:text-emerald-300 transition">Perodua Myvi</a></li>
+                <li><a href="aruz.html" class="hover:text-emerald-300 transition">Perodua Aruz</a></li>
+                <li><a href="axia.html" class="hover:text-emerald-300 transition">Perodua Axia</a></li>
+                <li><a href="bezza.html" class="hover:text-emerald-300 transition">Perodua Bezza</a></li>
+                <li><a href="alza.html" class="hover:text-emerald-300 transition">Perodua Alza</a></li>
+                <li><a href="traz.html" class="hover:text-emerald-300 transition">Perodua Traz</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Contact Information
+            </h4>
+
+            <div class="space-y-5">
+
+                <div class="flex gap-4">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-solid fa-location-dot text-perodua"></i>
+                    </div>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        14 & 16, Jalan Juruhebah U1/50,
+                        Temasya Industrial Park,
+                        40150 Shah Alam, Selangor
+                    </p>
+
+                </div>
+
+                <div class="flex gap-4 items-center">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-solid fa-phone text-perodua"></i>
+                    </div>
+
+                    <p class="text-slate-400">
+                        +60 19-365 0861
+                    </p>
+
+                </div>
+
+                <div class="flex gap-4 items-center">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                    </div>
+
+                    <p class="text-slate-400">
+                        WhatsApp Available 24/7
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Social Card -->
+        <div>
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Follow Ahmad Farhan
+            </h4>
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10">
+                <img src="../customer/farhan.png"
+                     class="rounded-2xl w-full object-cover"
+                     alt="Ahmad Farhan"
+                     onerror="this.src='https://placehold.co/300x300/1e293b/ffffff?text=Ahmad+Farhan'">
+                <div class="mt-5">
+                    <h5 class="font-bold text-lg text-center">
+                        Ahmad Farhan
+                    </h5>
+                    <p class="text-slate-400 text-sm mt-1 mb-5 text-center">
+                        Sales Advisor • Perodua Glenmarie
+                    </p>
+                    <ul class="example-2 mt-4">
+                      <li class="icon-content">
+                        <a
+                          data-social="tiktok"
+                          aria-label="TikTok"
+                          href="https://vt.tiktok.com/ZSCu9fLnT/"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <div class="tooltip">TikTok</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="instagram"
+                          aria-label="Instagram"
+                          href="https://www.instagram.com/farhann_1311?igsh=MW5lZHlpbTM5ams2cw=="
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="facebook"
+                          aria-label="Facebook"
+                          href="https://www.facebook.com/share/1DLLEJvmoB/?mibextid=wwXIfr"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="whatsapp"
+                          aria-label="WhatsApp"
+                          href="https://wa.me/60193650861"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+        // Initialize Swiper
+        const swiper = // Initialize Swiper with autoHeight to prevent layout cutoffs in mobile view
+        const swiper = // Initialize Swiper with autoHeight and observers to prevent layout cutoffs
+        const swiper = // Initialize Swiper with autoHeight and observers (loop disabled to prevent height conflicts on cloned slides)
+        const swiper = new Swiper('.mySwiper', {
+            loop: false,
+            autoHeight: true,
+            observer: true,
+            observeParents: true,
+            updateOnImagesReady: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // Function untuk penukar warna kereta (Visualizer)
+        function changeCarColor(colorName, imageSrc, colorHex, buttonEl) {
+            document.getElementById('main-car-image').src = imageSrc;
+            document.getElementById('color-name-display').innerText = colorName;
+            
+            const indicator = document.getElementById('color-indicator');
+            indicator.style.backgroundColor = colorHex;
+            indicator.style.color = colorHex;
+
+            // Reset semua border button warna
+            document.querySelectorAll('.color-swatch-btn').forEach(btn => {
+                btn.classList.remove('border-emerald-300', 'shadow-[0_8px_20px_rgba(14,165,233,0.1)]', 'ring-2', 'ring-emerald-300/30');
+                btn.classList.add('border-slate-100', 'bg-slate-50/50');
+            });
+
+            // Set active style pada button yang ditekan
+            buttonEl.classList.remove('border-slate-100', 'bg-slate-50/50');
+            buttonEl.classList.add('border-emerald-300', 'shadow-[0_8px_20px_rgba(14,165,233,0.1)]', 'ring-2', 'ring-emerald-300/30');
+        }
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

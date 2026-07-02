@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Perodua Glenmarie Sales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        @keyframes blink-cursor {
+            50% { border-color: transparent }
+        }
+        #typewriter {
+            animation: blink-cursor 0.75s step-end infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brandSlate to-slate-900 text-white text-xs py-2.5 px-4 text-center sm:text-right sm:px-8 font-medium tracking-wide shadow-sm">
+        <span class="inline-flex items-center mr-4">
+            <i class="fa-solid fa-location-dot text-perodua mr-1.5 animate-pulse"></i> Glenmarie Branch
+        </span>
+        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
+            <i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5 text-sm"></i> Contact Advisor
+        </a>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="flex-shrink-0 transition-transform hover:scale-105 duration-200">
+                        <img src="assets/img/logo-perodua.png" alt="Perodua Logo" class="h-10 w-auto object-contain"
+                            onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Perodua_logo.svg/512px-Perodua_logo.svg.png'">
+                    </a>
+                    <div class="hidden lg:block pl-4 border-l-2 border-slate-200">
+                        <span class="font-black text-lg block text-slate-900 tracking-tight leading-none">Glenmarie Sales</span>
+                        <span class="text-[10px] text-peroduaDark font-bold uppercase tracking-widest mt-1 block">Authorized Branch</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Home</a>
+
+                    <div class="relative group">
+                        <button class="text-slate-600 group-hover:text-peroduaDark font-semibold text-sm tracking-wide flex items-center space-x-1 py-2 focus:outline-none transition-colors duration-200">
+                            <span>Our Cars</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 transform scale-95 group-hover:scale-100">
+                            <a href="models/alza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> NEW PERODUA ALZA</a>
+                            <a href="models/ativa.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ATIVA</a>
+                            <a href="models/myvi.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA MYVI</a>
+                            <a href="models/aruz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ARUZ</a>
+                            <a href="models/axia.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA AXIA</a>
+                            <a href="models/bezza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA BEZZA</a>
+                            <a href="models/traz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA TRAZ</a>
+                        </div>
+                    </div>
+
+                    <a href="feedback.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Feedback Customer</a>
+                    <a href="about.html" class="text-peroduaDark font-bold text-sm tracking-wide border-b-2 border-peroduaDark py-2">About Me</a>
+
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+                        class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 transition duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>019-365 0861</span>
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-800 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors focus:outline-none">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Menu</span>
+                            <i class="fa-solid fa-bars text-lg text-peroduaDark"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl transition-all duration-300 animate-fadeIn">
+            <a href="index.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Home</a>
+            <a href="feedback.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Feedback Customer</a>
+            <a href="about.html" class="block py-2 text-peroduaDark font-bold border-b border-slate-50">About Me</a>
+            <div class="text-[10px] text-slate-400 font-bold tracking-widest uppercase pt-2">Car Model Options</div>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="models/alza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Alza</a>
+                <a href="models/ativa.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Ativa</a>
+                <a href="models/myvi.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Myvi</a>
+                <a href="models/aruz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Aruz</a>
+                <a href="models/axia.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Axia</a>
+                <a href="models/bezza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
+                <a href="models/traz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
+            </div>
+            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Me Content -->
+    <!-- About Me Content -->
+<main class="flex-grow">
+
+<section class="relative overflow-hidden py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+
+    <!-- Background Glow -->
+    <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-[140px]"></div>
+    <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[140px]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="text-center lg:text-left">
+
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/10 text-emerald-300 text-xs font-bold tracking-[3px] uppercase mb-6">
+                <i class="fa-solid fa-car"></i>
+                Perodua Sales Advisor
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-5xl md:text-6xl font-black text-white leading-tight">
+                Hi, I'm
+                <span class="bg-gradient-to-r from-perodua to-emerald-400 bg-clip-text text-transparent block">
+                    Ahmad Farhan
+                </span>
+            </h1>
+
+            <!-- Typewriter Subtitle -->
+            <p class="text-lg md:text-2xl font-black text-slate-300 mt-4 min-h-[40px] flex justify-center lg:justify-start items-center">
+                Your Trusted&nbsp;<span id="typewriter" class="text-emerald-400 border-r-2 border-emerald-400 pr-1 font-black"></span>
+            </p>
+
+            <p class="mt-6 text-slate-300 text-lg leading-relaxed max-w-xl">
+               I help customers get their Perodua vehicles through a simple, clear, and hassle-free process. From selecting the right model, handling loan applications, to final vehicle delivery, I manage every step carefully to ensure complete customer satisfaction.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
+
+                <a href="https://wa.me/60193650861"
+                   class="bg-gradient-to-r from-emerald-400 to-emerald-600 text-white font-black px-8 py-4 rounded-full shadow-[0_20px_60px_rgba(16,185,129,0.4)] hover:scale-105 transition">
+                    Contact Me
+                </a>
+
+                <a href="#experience"
+                   class="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition">
+                    My Journey
+                </a>
+
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-4 mt-10 max-w-md mx-auto lg:mx-0">
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-black text-white">14+</h3>
+                    <p class="text-xs text-slate-400 mt-1">Years Experience</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-black text-white">1K+</h3>
+                    <p class="text-xs text-slate-400 mt-1">Happy Customers</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
+                    <h3 class="text-2xl font-black text-white">5★</h3>
+                    <p class="text-xs text-slate-400 mt-1">Rating</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE & SOCIALS -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-8">
+            <!-- Profile Image Container -->
+            <div class="relative w-full max-w-sm rounded-[40px] overflow-hidden border border-white/10 shadow-[0_40px_120px_rgba(0,0,0,0.6)] group">
+                <img src="customer/farhan.png"
+                     class="w-full h-[550px] object-cover group-hover:scale-105 transition duration-700"
+                     alt="Ahmad Farhan">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Isometric Socials Card -->
+            <div class="card-iso">
+              <ul>
+                <li class="iso-pro relative w-[60px] h-[60px]">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://www.facebook.com/share/1DLLEJvmoB/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" class="block w-full h-full">
+                    <svg
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg"
+                    >
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path></svg
+                  ></a>
+                  <div class="text">Facebook</div>
+                </li>
+                <li class="iso-pro relative w-[60px] h-[60px]">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://wa.me/60193650861" target="_blank" aria-label="WhatsApp" class="block w-full h-full">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-117zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                    </svg>
+                  </a>
+                  <div class="text">WhatsApp</div>
+                </li>
+                <li class="iso-pro relative w-[60px] h-[60px]">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://www.instagram.com/farhann_1311?igsh=MW5lZHlpbTM5ams2cw==" target="_blank" aria-label="Instagram" class="block w-full h-full">
+                    <svg
+                      class="svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="text">Instagram</div>
+                </li>
+                <li class="iso-pro relative w-[60px] h-[60px]">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a href="https://www.tiktok.com/@farhann_1311?_t=ZS-8sEV6vK0zsw&_r=1" target="_blank" aria-label="TikTok" class="block w-full h-full">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.25V0h88a121.18 121.18 0 0 0 1.86 22.18A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z"></path>
+                    </svg>
+                  </a>
+                  <div class="text">TikTok</div>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+      
+      
+<section id="experience" class="py-24 bg-gradient-to-br from-slate-50 via-white to-sky-50">
+
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-20">
+        <span class="inline-flex items-center px-5 py-2 rounded-full bg-sky-100 text-peroduaDark font-bold text-sm tracking-wider uppercase">
+            Professional Journey
+        </span>
+
+        <h2 class="mt-6 text-4xl md:text-5xl font-black text-slate-900">
+            Sales Excellence Experience
+        </h2>
+
+        <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+            More than 10 years of automotive sales experience delivering exceptional customer satisfaction, strong business growth and outstanding results.
+        </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10">
+
+        <!-- CARD 1 -->
+        <div class="group relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-peroduaDark to-blue-800 p-[1px] hover:scale-[1.02] transition duration-500">
+
+            <div class="h-full bg-white rounded-[2rem] p-8">
+
+                <div class="flex items-center justify-between mb-8">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-perodua to-peroduaDark flex items-center justify-center text-white text-2xl shadow-xl">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <span class="px-4 py-2 rounded-full bg-sky-100 text-peroduaDark font-bold text-sm">
+                        2015 - Present
+                    </span>
+                </div>
+
+                <h3 class="text-2xl font-black text-slate-900">
+                    Senior Sales Advisor
+                </h3>
+
+               
+
+                <p class="text-slate-500 mt-1">
+                    <i class="fa-solid fa-location-dot mr-2"></i>
+                    Glenmarie, Selangor
+                </p>
+
+                <div class="mt-8 space-y-4">
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-trophy text-perodua mt-1"></i>
+                        <p class="text-slate-600">
+                            Consistently delivering premium customer experiences while maintaining excellent client satisfaction ratings.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-chart-line text-emerald-500 mt-1"></i>
+                        <p class="text-slate-600">
+                            Driving dealership growth through strong sales performance, strategic customer engagement and repeat business.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-users text-perodua mt-1"></i>
+                        <p class="text-slate-600">
+                            Building long-term customer relationships through trust, professionalism and personalized consultation.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="group relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-500 to-green-700 p-[1px] hover:scale-[1.02] transition duration-500">
+
+            <div class="h-full bg-white rounded-[2rem] p-8">
+
+                <div class="flex items-center justify-between mb-8">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-white text-2xl shadow-xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <span class="px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-bold text-sm">
+                        2004 - 2014
+                    </span>
+                </div>
+
+                <h3 class="text-2xl font-black text-slate-900">
+                    Service Advisor
+                </h3>
+
+             
+                </p>
+
+                <p class="text-slate-500 mt-1">
+                    <i class="fa-solid fa-location-dot mr-2"></i>
+                    Glenmarie, Selangor
+                </p>
+
+                <div class="mt-8 space-y-4">
+
+                  <div class="flex gap-4">
+    <i class="fa-solid fa-wrench text-perodua mt-1"></i>
+    <p class="text-slate-600">
+        Over a decade of proven experience as a Service Advisor (2004–2014), delivering reliable automotive service consultation and workshop coordination with consistent professionalism.
+    </p>
+</div>
+
+<div class="flex gap-4">
+    <i class="fa-solid fa-handshake text-perodua mt-1"></i>
+    <p class="text-slate-600">
+        Assisted customers through vehicle servicing processes, providing clear explanations on repairs, maintenance needs, and cost estimates with confidence and transparency.
+    </p>
+</div>
+
+<div class="flex gap-4">
+    <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+    <p class="text-slate-600">
+        Recognized for strong customer service, trustworthiness, and the ability to ensure high-quality after-sales support and customer satisfaction.
+    </p>
+</div>
+
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mt-10">
+
+                    <div class="text-center bg-slate-50 rounded-xl p-4">
+                        <div class="text-2xl font-black text-slate-900">10+</div>
+                        <div class="text-xs text-slate-500">Years</div>
+                    </div>
+
+                    <div class="text-center bg-slate-50 rounded-xl p-4">
+                        <div class="text-2xl font-black text-slate-900">100%</div>
+                        <div class="text-xs text-slate-500">Commitment</div>
+                    </div>
+
+                    <div class="text-center bg-slate-50 rounded-xl p-4">
+                        <div class="text-2xl font-black text-slate-900">⭐⭐⭐⭐</div>
+                        <div class="text-xs text-slate-500">Service</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>    
+
+    <footer class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white mt-auto">
+
+
+<!-- Background Glow -->
+<div class="absolute top-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+
+<div class="relative max-w-7xl mx-auto px-6 py-20">
+
+    <!-- Top Area -->
+    <div class="grid lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+
+            <div class="inline-flex items-center gap-3 mb-6">
+
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-r from-perodua to-perodua flex items-center justify-center">
+                    <i class="fa-solid fa-car-side text-white"></i>
+                </div>
+
+                <div>
+                    <h3 class="font-black text-xl">Farhan Perodua</h3>
+                    <p class="text-emerald-300 text-sm">Authorized Sales Advisor</p>
+                </div>
+
+            </div>
+
+            <p class="text-slate-400 leading-relaxed text-sm">
+                Helping customers own their dream Perodua with an easy process,
+                fast and reliable. From booking to car delivery,
+                Everything is handled professionally.
+            </p>
+
+        </div>
+
+        <!-- Cars -->
+        <div>
+
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Perodua Models
+            </h4>
+
+            <ul class="space-y-3 text-slate-400">
+
+                <li><a href="models/ativa.html" class="hover:text-emerald-300 transition">Perodua Ativa</a></li>
+                <li><a href="models/myvi.html" class="hover:text-emerald-300 transition">Perodua Myvi</a></li>
+                <li><a href="models/aruz.html" class="hover:text-emerald-300 transition">Perodua Aruz</a></li>
+                <li><a href="models/axia.html" class="hover:text-emerald-300 transition">Perodua Axia</a></li>
+                <li><a href="models/bezza.html" class="hover:text-emerald-300 transition">Perodua Bezza</a></li>
+                <li><a href="models/alza.html" class="hover:text-emerald-300 transition">Perodua Alza</a></li>
+                <li><a href="models/traz.html" class="hover:text-emerald-300 transition">Perodua Traz</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Contact Information
+            </h4>
+
+            <div class="space-y-5">
+
+                <div class="flex gap-4">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-solid fa-location-dot text-perodua"></i>
+                    </div>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        14 & 16, Jalan Juruhebah U1/50,
+                        Temasya Industrial Park,
+                        40150 Shah Alam, Selangor
+                    </p>
+
+                </div>
+
+                <div class="flex gap-4 items-center">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-solid fa-phone text-perodua"></i>
+                    </div>
+
+                    <p class="text-slate-400">
+                        +60 19-365 0861
+                    </p>
+
+                </div>
+
+                <div class="flex gap-4 items-center">
+
+                    <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                    </div>
+
+                    <p class="text-slate-400">
+                        WhatsApp Available 24/7
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Social Card -->
+        <div>
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Follow Ahmad Farhan
+            </h4>
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10">
+                <img src="customer/farhan.png"
+                     class="rounded-2xl w-full object-cover"
+                     alt="Ahmad Farhan"
+                     onerror="this.src='https://placehold.co/300x300/1e293b/ffffff?text=Ahmad+Farhan'">
+                <div class="mt-5">
+                    <h5 class="font-bold text-lg text-center">
+                        Ahmad Farhan
+                    </h5>
+                    <p class="text-slate-400 text-sm mt-1 mb-5 text-center">
+                        Sales Advisor • Perodua Glenmarie
+                    </p>
+                    <ul class="example-2 mt-4">
+                      <li class="icon-content">
+                        <a
+                          data-social="tiktok"
+                          aria-label="TikTok"
+                          href="https://vt.tiktok.com/ZSCu9fLnT/"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <div class="tooltip">TikTok</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="instagram"
+                          aria-label="Instagram"
+                          href="https://www.instagram.com/farhann_1311?igsh=MW5lZHlpbTM5ams2cw=="
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="facebook"
+                          aria-label="Facebook"
+                          href="https://www.facebook.com/share/1DLLEJvmoB/?mibextid=wwXIfr"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="whatsapp"
+                          aria-label="WhatsApp"
+                          href="https://wa.me/60193650861"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+<script>
+    // Typewriter effect for sales advisor role
+    document.addEventListener("DOMContentLoaded", () => {
+        const typewriterElement = document.getElementById("typewriter");
+        const words = ["Perodua Sales Advisor", "Glenmarie Car Dealer", "Automotive Consultant", "Trusted Sales Agent"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let delay = 100;
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+                delay = 50;
+            } else {
+                typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+                delay = 100;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                delay = 2000; // Pause at full word
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                delay = 500; // Pause before typing next word
+            }
+
+            setTimeout(typeEffect, delay);
+        }
+
+        if (typewriterElement) {
+            typeEffect();
+        }
+    });
+
+    // Unified Mobile Menu Toggle
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            // override any existing click listeners by cloning
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+            
+            newBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !newBtn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        }
+    });
+</script>
