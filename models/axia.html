@@ -8,11 +8,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
-    
-
     <script src="../assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .showroom-container {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .showroom-container *, .showroom-container ::before, .showroom-container ::after {
+            box-sizing: border-box;
+        }
+        .mySwiper {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-slide {
+            height: auto;
+            display: block;
+        }
+        /* Membaiki isu paparan titik navigasi pada tema gelap */
+        .mySwiper .swiper-pagination-bullet {
+            background: #ffffff !important;
+            opacity: 0.3;
+        }
+        .mySwiper .swiper-pagination-bullet-active {
+            background: var(--perodua, #00752c) !important; /* Changed to light blue */
+            opacity: 1;
+            width: 24px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
@@ -46,10 +72,10 @@
                     <a href="../index.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Home</a>
 
                     <div class="relative group">
-                        <button class="text-peroduaDark font-bold text-sm tracking-wide flex items-center space-x-1 py-2 focus:outline-none transition-colors duration-200 border-b-2 border-peroduaDark">
+                        <a href="our-cars.html" class="text-peroduaDark font-bold text-sm tracking-wide flex items-center space-x-1 py-2 focus:outline-none transition-colors duration-200 border-b-2 border-peroduaDark">
                             <span>Our Cars</span>
                             <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                        </button>
+                        </a>
                         <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 transform scale-95 group-hover:scale-100">
                             <a href="alza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> NEW PERODUA ALZA</a>
                             <a href="ativa.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ATIVA</a>
@@ -109,61 +135,128 @@
                 <h1 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight uppercase">PERODUA AXIA</h1>
                 <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Choose the Perodua AXIA variant that best suits your needs and budget. We offer very affordable monthly installments with a fast and easy loan approval process.</p>
             </div>
+<!-- LUXURY AXIA CONFIGURATOR -->
+<section class="relative py-28 bg-slate-50 overflow-hidden">
 
-            <div class="relative overflow-hidden py-12 bg-gradient-to-tr from-cyan-50 via-sky-50 to-blue-100 rounded-[2.5rem] mb-12">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(186,230,253,0.4),_transparent_50%)] pointer-events-none"></div>
-                <div class="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="bg-white/80 backdrop-blur-xl rounded-[2.5rem] shadow-[0_40px_80px_rgba(14,165,233,0.08)] border border-white p-6 md:p-12 overflow-hidden relative">
-                        <div class="text-center mb-12 relative z-10">
-                            <span class="text-peroduaDark text-xs font-black tracking-[0.25em] uppercase bg-white px-5 py-2 rounded-full mb-4 inline-block border border-sky-100 shadow-sm">Visualizer</span>
-                            <h2 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight uppercase">Pilih Warna <span class="text-perodua">Axia</span> Anda</h2>
-                            <div class="w-16 h-1 bg-gradient-to-r from-emerald-300 to-perodua mx-auto mt-4 rounded-full"></div>
-                        </div>
+    <!-- GOLD LIGHT EFFECT -->
+    <div class="absolute top-[-250px] right-[-250px] w-[600px] h-[600px] bg-emerald-500/10 blur-[180px] rounded-full"></div>
+    <div class="absolute bottom-[-250px] left-[-250px] w-[600px] h-[600px] bg-emerald-500/10 blur-[180px] rounded-full"></div>
 
-                        <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative z-10">
-                            <div class="w-full lg:w-3/5 flex justify-center items-center bg-white rounded-[2rem] p-6 md:p-12 h-[280px] sm:h-[350px] md:h-[400px] lg:h-[460px] relative shadow-[0_15px_40px_rgba(14,165,233,0.04)] border border-slate-100 overflow-hidden group">
-                                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(14,165,233,0.03),_transparent_70%)] pointer-events-none z-0"></div>
-                                <img id="main-car-image" src="../assets/img/axia blue.png" alt="Perodua AXIA" class="max-w-[90%] max-h-[85%] object-contain relative z-10 drop-shadow-[0_20px_40px_rgba(15,23,42,0.15)] transition-all duration-500 ease-out" onerror="this.src='../assets/img/ocean.png'">
-                                <div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-slate-900/10 blur-2xl rounded-[100%] z-0"></div>
-                                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur-md text-white border border-slate-800 px-6 py-2.5 rounded-full font-bold tracking-wider text-xs sm:text-sm shadow-2xl flex items-center space-x-3 z-20">
-                                    <div id="color-indicator" class="w-3.5 h-3.5 rounded-full shadow-[0_0_10px_currentColor] border border-white/20 transition-all duration-500" style="background-color: #5bc0be; color: #5bc0be;"></div>
-                                    <span id="color-name-display" class="transition-all duration-300 uppercase tracking-widest text-slate-200">Coral Blue</span>
-                                </div>
-                            </div>
+    <!-- HEADER -->
+    <div class="text-center mb-16 px-6">
 
-                            <div class="w-full lg:w-2/5 flex flex-col justify-center">
-                                <div class="mb-4 flex items-center space-x-2.5 justify-center lg:justify-start">
-                                    <span class="w-1.5 h-4 bg-perodua rounded-full"></span>
-                                    <p class="text-xs text-peroduaDark/80 font-extrabold uppercase tracking-widest">5 Pilihan Warna Premium:</p>
-                                </div>
-                                <div class="grid grid-cols-5 lg:grid-cols-1 gap-3 sm:gap-4 lg:space-y-2">
-                                    <button onclick="changeCarColor('Coral Blue', '../assets/img/axia blue.png', '#5bc0be', this)" class="color-swatch-btn group flex flex-col lg:flex-row items-center p-3 rounded-xl lg:rounded-2xl border transition-all duration-300 bg-white border-emerald-300 shadow-[0_8px_20px_rgba(14,165,233,0.1)] ring-2 ring-emerald-300/30">
-                                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white shadow-md relative overflow-hidden flex-shrink-0" style="background-color: #5bc0be"></div>
-                                        <span class="hidden lg:block text-sm font-bold text-sky-950 ml-4 tracking-tight">Coral Blue</span>
-                                    </button>
-                                    <button onclick="changeCarColor('Granite Grey', '../assets/img/axia grey.png', '#5c5c5c', this)" class="color-swatch-btn group flex flex-col lg:flex-row items-center p-3 rounded-xl lg:rounded-2xl border border-slate-100 bg-slate-50/50 transition-all duration-300 hover:bg-white hover:border-sky-100">
-                                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white shadow-md relative overflow-hidden flex-shrink-0" style="background-color: #5c5c5c"></div>
-                                        <span class="hidden lg:block text-sm font-bold text-slate-700 ml-4 tracking-tight">Granite Grey</span>
-                                    </button>
-                                    <button onclick="changeCarColor('Lava Red', '../assets/img/axia red.png', '#e63946', this)" class="color-swatch-btn group flex flex-col lg:flex-row items-center p-3 rounded-xl lg:rounded-2xl border border-slate-100 bg-slate-50/50 transition-all duration-300 hover:bg-white hover:border-sky-100">
-                                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white shadow-md relative overflow-hidden flex-shrink-0" style="background-color: #e63946"></div>
-                                        <span class="hidden lg:block text-sm font-bold text-slate-700 ml-4 tracking-tight">Lava Red</span>
-                                    </button>
-                                    <button onclick="changeCarColor('Glittering Silver', '../assets/img/axia black.png', '#c0c0c0', this)" class="color-swatch-btn group flex flex-col lg:flex-row items-center p-3 rounded-xl lg:rounded-2xl border border-slate-100 bg-slate-50/50 transition-all duration-300 hover:bg-white hover:border-sky-100">
-                                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white shadow-md relative overflow-hidden flex-shrink-0" style="background-color: #c0c0c0"></div>
-                                        <span class="hidden lg:block text-sm font-bold text-slate-700 ml-4 tracking-tight">Glittering Silver</span>
-                                    </button>
-                                    <button onclick="changeCarColor('Ivory White', '../assets/img/axia white.png', '#f8f9fa', this)" class="color-swatch-btn group flex flex-col lg:flex-row items-center p-3 rounded-xl lg:rounded-2xl border border-slate-100 bg-slate-50/50 transition-all duration-300 hover:bg-white hover:border-sky-100">
-                                        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-white shadow-md relative overflow-hidden flex-shrink-0" style="background-color: #f8f9fa"></div>
-                                        <span class="hidden lg:block text-sm font-bold text-slate-700 ml-4 tracking-tight">Ivory White</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <span class="inline-block bg-white border border-emerald-200 text-emerald-700 px-6 py-2 rounded-full text-xs tracking-[0.3em] uppercase font-bold shadow-sm">
+            Premium Studio
+        </span>
+
+        <h2 class="mt-5 text-4xl md:text-5xl font-black text-slate-900">
+            Choose Your <span class="text-emerald-600">Axia Style</span>
+        </h2>
+
+        <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+            Explore every exterior detail in a premium interactive showroom experience.
+        </p>
+
+    </div>
+
+    <!-- MAIN GRID (NEW LAYOUT) -->
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+        <!-- CAR DISPLAY (BIG FOCUS) -->
+        <div class="relative bg-white rounded-[2.5rem] shadow-[0_35px_90px_rgba(0,0,0,0.08)] border border-gray-100 p-10">
+
+            <img id="main-car-image"
+                 src="../gambar/axia blue.png"
+                 class="w-full h-[420px] object-contain transition duration-500"
+                 alt="Axia">
+
+            <!-- FLOAT LABEL -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-2 rounded-full flex items-center gap-3 shadow-lg">
+
+                <div id="color-indicator" class="w-3 h-3 rounded-full" style="background-color: #5bc0be;"></div>
+
+                <span id="color-name-display" class="text-sm font-bold">
+                    Coral Blue
+                </span>
+
             </div>
 
+        </div>
+
+        <!-- COLOR SELECTOR (NEW STYLE GRID CARDS) -->
+        <div class="bg-white rounded-[2.5rem] shadow-[0_35px_90px_rgba(0,0,0,0.06)] border border-gray-100 p-10">
+
+            <h3 class="text-xl font-black text-slate-900 mb-6">
+                Select Exterior Color
+            </h3>
+
+            <div class="grid grid-cols-2 gap-4">
+                <button class="color-btn flex flex-col items-center justify-center gap-2 p-4 rounded-xl border hover:border-perodua hover:shadow-md transition"
+                    onclick="changeCarColor('Coral Blue','../gambar/axia blue.png','#5bc0be',this)">
+                    <div class="w-8 h-8 rounded-full" style="background-color: #5bc0be; "></div>
+                    <span class="text-sm font-semibold">Blue</span>
+                </button>
+                <button class="color-btn flex flex-col items-center justify-center gap-2 p-4 rounded-xl border hover:border-perodua hover:shadow-md transition"
+                    onclick="changeCarColor('Granite Grey','../gambar/axia grey.png','#5c5c5c',this)">
+                    <div class="w-8 h-8 rounded-full" style="background-color: #5c5c5c; "></div>
+                    <span class="text-sm font-semibold">Grey</span>
+                </button>
+                <button class="color-btn flex flex-col items-center justify-center gap-2 p-4 rounded-xl border hover:border-perodua hover:shadow-md transition"
+                    onclick="changeCarColor('Lava Red','../gambar/axia red.png','#e63946',this)">
+                    <div class="w-8 h-8 rounded-full" style="background-color: #e63946; "></div>
+                    <span class="text-sm font-semibold">Red</span>
+                </button>
+                <button class="color-btn flex flex-col items-center justify-center gap-2 p-4 rounded-xl border hover:border-perodua hover:shadow-md transition"
+                    onclick="changeCarColor('Glittering Silver','../gambar/axia black.png','#c0c0c0',this)">
+                    <div class="w-8 h-8 rounded-full" style="background-color: #c0c0c0; "></div>
+                    <span class="text-sm font-semibold">Silver</span>
+                </button>
+                <button class="color-btn flex flex-col items-center justify-center gap-2 p-4 rounded-xl border hover:border-perodua hover:shadow-md transition col-span-2"
+                    onclick="changeCarColor('Ivory White','../gambar/axia white.png','#f8f9fa',this)">
+                    <div class="w-8 h-8 rounded-full" style="background-color: #f8f9fa; border: 1px solid #e5e7eb;"></div>
+                    <span class="text-sm font-semibold">White</span>
+                </button>
+            </div>
+
+            <!-- INFO -->
+            <div class="mt-8 bg-emerald-50 border border-emerald-100 rounded-xl p-5">
+                <p class="text-sm text-slate-600">
+                    ✨ Premium paint finish with high gloss protection for long-lasting shine.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+
+function changeCarColor(name, image, color, btn){
+
+    const img = document.getElementById("main-car-image");
+    const label = document.getElementById("color-name-display");
+    const indicator = document.getElementById("color-indicator");
+
+    img.style.opacity = "0.3";
+
+    setTimeout(() => {
+        img.src = image;
+        label.innerText = name;
+        indicator.style.backgroundColor = color;
+        img.style.opacity = "1";
+    }, 150);
+
+    document.querySelectorAll(".color-btn").forEach(b=>{
+        b.classList.remove("ring-2","ring-amber-400");
+    });
+
+    btn.classList.add("ring-2","ring-amber-400");
+}
+
+</script>
             <!-- Showroom Section -->
             <div class="showroom-container relative overflow-hidden rounded-[30px] bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-4 sm:p-6 md:p-10 shadow-2xl my-10 text-white">
                 <div class="text-center mb-6 md:mb-8">
@@ -172,13 +265,14 @@
                 </div>
 
                 <div class="swiper mySwiper pb-10">
-                <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide">
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1: Axia 1.0 E -->
+                        <div class="swiper-slide">
+                            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                                 <div class="w-full lg:order-2 relative flex items-center justify-center p-4 md:p-6 bg-white rounded-2xl shadow-xl border border-slate-100/10 transition-all duration-300 hover:shadow-2xl group min-h-[180px] sm:min-h-[240px] md:min-h-[300px]">
                                     <div class="absolute w-48 h-48 bg-perodua/10 blur-[50px] rounded-full z-0"></div>
-                                    <img src="../assets/img/axia ramah.png" alt="AXIA 1.0 E" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+E+Image';">
+                                    <img src="../gambar/axia ramah.png" alt="AXIA 1.0 E" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+E+Image';">
                                 </div>
 
                                 <div class="w-full lg:order-1">
@@ -187,61 +281,62 @@
                                     <p class="text-gray-400 mt-1 text-xs sm:text-sm md:text-base font-medium">Affordable • Fuel Saver • Manual Transmission</p>
 
                                     <div class="mt-5 space-y-2 text-xs sm:text-sm">
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Next Selling Price</span>
                                             <span class="font-bold text-white">RM 21,740.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">No Plate / Road Tax (1 Year)</span>
                                             <span class="font-medium text-gray-300">RM 40.00 / RM 20.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Registration Fee (Private)</span>
                                             <span class="font-medium text-gray-300">RM 150.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Insurance Premium Claims</span>
                                             <span class="font-medium text-gray-300">RM 880.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">H.P Ownership Claims</span>
                                             <span class="font-medium text-gray-300">RM 50.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">OTR Price</span>
                                             <span class="font-black text-perodua text-sm md:text-base">RM 22,300.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Deposit (10%) / Loan (90%)</span>
                                             <span class="font-medium text-gray-300 text-right">RM 2,300.00 / RM 20,600.00</span>
                                             
                                         </div>
                                          <div class="pt-4 grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Monthly (10% Dep)</div>
-                            <div class="text-base text-white font-black">RM 253.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-blue-50 p-3 rounded-xl text-center border border-blue-100">
+                            <div class="text-[9px] text-blue-600 font-extrabold uppercase mb-1">Monthly (10% Dep)</div>
+                            <div class="text-base text-blue-800 font-black">RM 253.00</div>
+                            <div class="text-[8px] text-blue-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Full Loan</div>
-                            <div class="text-base text-white font-black">RM 283.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-emerald-50 p-3 rounded-xl text-center border border-emerald-100">
+                            <div class="text-[9px] text-emerald-600 font-extrabold uppercase mb-1">Full Loan</div>
+                            <div class="text-base text-emerald-800 font-black">RM 283.00</div>
+                            <div class="text-[8px] text-emerald-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                                    <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-5">
                                      
-                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20E" class="w-full flex items-center justify-center bg-green-500 text-white hover:bg-green-600 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
+                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20E" class="w-full flex items-center justify-center bg-perodua text-white hover:bg-peroduaDark font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+
+                        <!-- Slide 2: Axia 1.0 G -->
+                        <div class="swiper-slide">
+                            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                                 <div class="w-full lg:order-2 relative flex items-center justify-center p-4 md:p-6 bg-white rounded-2xl shadow-xl border border-slate-100/10 transition-all duration-300 hover:shadow-2xl group min-h-[180px] sm:min-h-[240px] md:min-h-[300px]">
                                     <div class="absolute w-48 h-48 bg-perodua/10 blur-[50px] rounded-full z-0"></div>
-                                    <img src="../assets/img/axia grey.png" alt="AXIA 1.0 G" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+G+Image';">
+                                    <img src="../gambar/axia grey.png" alt="AXIA 1.0 G" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+G+Image';">
                                 </div>
 
                                 <div class="w-full lg:order-1">
@@ -250,60 +345,61 @@
                                     <p class="text-gray-400 mt-1 text-xs sm:text-sm md:text-base font-medium">Compact • Stylish • Fuel Efficient</p>
 
                                     <div class="mt-5 space-y-2 text-xs sm:text-sm">
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Next Selling Price</span>
                                             <span class="font-bold text-white">RM 38,340.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">No Plate / Road Tax (1 Year)</span>
                                             <span class="font-medium text-gray-300">RM 40.00 / RM 20.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Registration Fee (Private)</span>
                                             <span class="font-medium text-gray-300">RM 150.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Insurance Premium Claims</span>
                                             <span class="font-medium text-gray-300">RM 1,383.64</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">H.P Ownership Claims</span>
                                             <span class="font-medium text-gray-300">RM 50.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">OTR Price</span>
                                             <span class="font-black text-perodua text-sm md:text-base">RM 39,983.64</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Deposit (10%) / Loan (90%)</span>
                                             <span class="font-medium text-gray-300 text-right">RM 5,202.89 / RM 35,900.00</span>
                                         </div>
                                          <div class="pt-4 grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Monthly (10% Dep)</div>
-                            <div class="text-base text-white font-black">RM 432.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-blue-50 p-3 rounded-xl text-center border border-blue-100">
+                            <div class="text-[9px] text-blue-600 font-extrabold uppercase mb-1">Monthly (10% Dep)</div>
+                            <div class="text-base text-blue-800 font-black">RM 432.00</div>
+                            <div class="text-[8px] text-blue-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Full Loan</div>
-                            <div class="text-base text-white font-black">RM 481.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-emerald-50 p-3 rounded-xl text-center border border-emerald-100">
+                            <div class="text-[9px] text-emerald-600 font-extrabold uppercase mb-1">Full Loan</div>
+                            <div class="text-base text-emerald-800 font-black">RM 481.00</div>
+                            <div class="text-[8px] text-emerald-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                                    <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-5">
                                         <a href="axia-g.html" class="w-full flex items-center justify-center bg-white text-black hover:bg-gray-200 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">View Details</a>
-                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20G" class="w-full flex items-center justify-center bg-green-500 text-white hover:bg-green-600 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
+                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20G" class="w-full flex items-center justify-center bg-perodua text-white hover:bg-peroduaDark font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+
+                        <!-- Slide 3: Axia 1.0 X -->
+                        <div class="swiper-slide">
+                            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                                 <div class="w-full lg:order-2 relative flex items-center justify-center p-4 md:p-6 bg-white rounded-2xl shadow-xl border border-slate-100/10 transition-all duration-300 hover:shadow-2xl group min-h-[180px] sm:min-h-[240px] md:min-h-[300px]">
                                     <div class="absolute w-48 h-48 bg-perodua/10 blur-[50px] rounded-full z-0"></div>
-                                    <img src="../assets/img/axia red.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
+                                    <img src="../gambar/axia grey.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
                                 </div>
 
                                 <div class="w-full lg:order-1">
@@ -312,60 +408,59 @@
                                     <p class="text-gray-400 mt-1 text-xs sm:text-sm md:text-base font-medium">Smart Entry • Push Start Button • LED Headlamps</p>
 
                                     <div class="mt-5 space-y-2 text-xs sm:text-sm">
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Next Selling Price</span>
                                             <span class="font-bold text-white">RM 39,740.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">No Plate / Road Tax (1 Year)</span>
                                             <span class="font-medium text-gray-300">RM 40.00 / RM 20.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Registration Fee (Private)</span>
                                             <span class="font-medium text-gray-300">RM 150.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Insurance Premium Claims</span>
                                             <span class="font-medium text-gray-300">RM 1,380.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">H.P Ownership Claims</span>
                                             <span class="font-medium text-gray-300">RM 50.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">OTR Price</span>
                                             <span class="font-black text-perodua text-sm md:text-base">RM 41,448.76</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Deposit (10%) / Loan (90%)</span>
                                             <span class="font-medium text-gray-300 text-right">RM 4,148.76 / RM 37,300.00</span>
                                         </div>
                                          <div class="pt-4 grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Monthly (10% Dep)</div>
-                            <div class="text-base text-white font-black">RM 448.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-blue-50 p-3 rounded-xl text-center border border-blue-100">
+                            <div class="text-[9px] text-blue-600 font-extrabold uppercase mb-1">Monthly (10% Dep)</div>
+                            <div class="text-base text-blue-800 font-black">RM 448.00</div>
+                            <div class="text-[8px] text-blue-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Full Loan</div>
-                            <div class="text-base text-white font-black">RM 498.00</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-emerald-50 p-3 rounded-xl text-center border border-emerald-100">
+                            <div class="text-[9px] text-emerald-600 font-extrabold uppercase mb-1">Full Loan</div>
+                            <div class="text-base text-emerald-800 font-black">RM 498.00</div>
+                            <div class="text-[8px] text-emerald-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                                    <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-5">
                                         <a href="axia-x.html" class="w-full flex items-center justify-center bg-white text-black hover:bg-gray-200 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">View Details</a>
-                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-green-500 text-white hover:bg-green-600 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
+                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-perodua text-white hover:bg-peroduaDark font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                         <div class="swiper-slide">
+                            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                                 <div class="w-full lg:order-2 relative flex items-center justify-center p-4 md:p-6 bg-white rounded-2xl shadow-xl border border-slate-100/10 transition-all duration-300 hover:shadow-2xl group min-h-[180px] sm:min-h-[240px] md:min-h-[300px]">
                                     <div class="absolute w-48 h-48 bg-perodua/10 blur-[50px] rounded-full z-0"></div>
-                                    <img src="../assets/img/axia blue.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
+                                    <img src="../gambar/axia blue.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
                                 </div>
 
                                 <div class="w-full lg:order-1">
@@ -374,60 +469,59 @@
                                     <p class="text-gray-400 mt-1 text-xs sm:text-sm md:text-base font-medium"> â€¢ Push Start Button â€¢ LED Headlamps</p>
 
                                     <div class="mt-5 space-y-2 text-xs sm:text-sm">
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Next Selling Price</span>
                                             <span class="font-bold text-white">RM 43,740.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">No Plate / Road Tax (1 Year)</span>
                                             <span class="font-medium text-gray-300">RM 40.00 / RM 20.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Registration Fee (Private)</span>
                                             <span class="font-medium text-gray-300">RM 150.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Insurance Premium Claims</span>
                                             <span class="font-medium text-gray-300">RM 1,490.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">H.P Ownership Claims</span>
                                             <span class="font-medium text-gray-300">RM 50.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">OTR Price</span>
                                             <span class="font-black text-perodua text-sm md:text-base">RM 44,360.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Deposit (10%) / Loan (90%)</span>
                                             <span class="font-medium text-gray-300 text-right">RM 4,631.44 / RM 40,900.00</span>
                                         </div>
                                          <div class="pt-4 grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Monthly (10% Dep)</div>
-                            <div class="text-base text-white font-black">RM 547</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-blue-50 p-3 rounded-xl text-center border border-blue-100">
+                            <div class="text-[9px] text-blue-600 font-extrabold uppercase mb-1">Monthly (10% Dep)</div>
+                            <div class="text-base text-blue-800 font-black">RM 547</div>
+                            <div class="text-[8px] text-blue-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Full Loan</div>
-                            <div class="text-base text-white font-black">RM 615</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-emerald-50 p-3 rounded-xl text-center border border-emerald-100">
+                            <div class="text-[9px] text-emerald-600 font-extrabold uppercase mb-1">Full Loan</div>
+                            <div class="text-base text-emerald-800 font-black">RM 615</div>
+                            <div class="text-[8px] text-emerald-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                                    <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-5">
                                         <a href="axia-se.html" class="w-full flex items-center justify-center bg-white text-black hover:bg-gray-200 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">View Details</a>
-                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-green-500 text-white hover:bg-green-600 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
+                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-perodua text-white hover:bg-peroduaDark font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+ <div class="swiper-slide">
+                            <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                                 <div class="w-full lg:order-2 relative flex items-center justify-center p-4 md:p-6 bg-white rounded-2xl shadow-xl border border-slate-100/10 transition-all duration-300 hover:shadow-2xl group min-h-[180px] sm:min-h-[240px] md:min-h-[300px]">
                                     <div class="absolute w-48 h-48 bg-perodua/10 blur-[50px] rounded-full z-0"></div>
-                                    <img src="../assets/img/axia blue.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
+                                    <img src="../gambar/axia blue.png" alt="AXIA 1.0 X" class="w-10/12 sm:w-8/12 lg:w-full max-w-[400px] h-auto object-contain transition-transform duration-500 ease-out transform group-hover:scale-105 group-hover:-translate-y-2 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/ffffff/000000?text=Axia+X+Image';">
                                 </div>
 
                                 <div class="w-full lg:order-1">
@@ -436,148 +530,184 @@
                                     <p class="text-gray-400 mt-1 text-xs sm:text-sm md:text-base font-medium">Smart Entry â€¢ Push Start Button â€¢ LED Headlamps</p>
 
                                     <div class="mt-5 space-y-2 text-xs sm:text-sm">
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Next Selling Price</span>
                                             <span class="font-bold text-white">RM 49,240.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">No Plate / Road Tax (1 Year)</span>
                                             <span class="font-medium text-gray-300">RM 40.00 / RM 20.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Registration Fee (Private)</span>
                                             <span class="font-medium text-gray-300">RM 150.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Insurance Premium Claims</span>
                                         <span class="font-medium text-gray-300">RM 1,620.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">H.P Ownership Claims</span>
                                             <span class="font-medium text-gray-300">RM 50.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">OTR Price</span>
                                             <span class="font-black text-perodua text-sm md:text-base">RM 49,860.00</span>
                                         </div>
-                                        <div class="flex justify-between items-center border-b border-slate-800 pb-1.5 gap-2">
+                                        <div class="flex justify-between border-b border-slate-800 pb-1.5">
                                             <span class="text-gray-400">Deposit (10%) / Loan (90%)</span>
                                             <span class="font-medium text-gray-300 text-right">RM 5,202.89/ RM 46,000.00</span>
                                         </div>
                                          <div class="pt-4 grid grid-cols-2 gap-3 mb-4">
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Monthly (10% Dep)</div>
-                            <div class="text-base text-white font-black">RM 851</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-blue-50 p-3 rounded-xl text-center border border-blue-100">
+                            <div class="text-[9px] text-blue-600 font-extrabold uppercase mb-1">Monthly (10% Dep)</div>
+                            <div class="text-base text-blue-800 font-black">RM 851</div>
+                            <div class="text-[8px] text-blue-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
-                        <div class="bg-slate-950/60 p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl text-center border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-inner">
-                            <div class="text-[9px] text-emerald-400 font-black tracking-wider uppercase mb-1">Full Loan</div>
-                            <div class="text-base text-white font-black">RM 946</div>
-                            <div class="text-[8px] text-emerald-500/60 font-bold uppercase mt-1">9 Years</div>
+                        <div class="bg-emerald-50 p-3 rounded-xl text-center border border-emerald-100">
+                            <div class="text-[9px] text-emerald-600 font-extrabold uppercase mb-1">Full Loan</div>
+                            <div class="text-base text-emerald-800 font-black">RM 946</div>
+                            <div class="text-[8px] text-emerald-400 font-bold uppercase mt-1">9 Years</div>
                         </div>
                                     </div>
 
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                                    <div class="grid grid-cols-2 gap-3 sm:gap-4 mt-5">
                                         <a href="axia-av.html" class="w-full flex items-center justify-center bg-white text-black hover:bg-gray-200 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">View Details</a>
-                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-green-500 text-white hover:bg-green-600 font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
+                                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia%201.0%20X" class="w-full flex items-center justify-center bg-perodua text-white hover:bg-peroduaDark font-bold py-3 px-4 rounded-full text-center text-xs md:text-sm shadow-md">Book Now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
+                    <!-- Swiper Pagination -->
+                    <div class="swiper-pagination !bottom-0"></div>
                 </div>
-                <!-- Swiper Pagination -->
-                <div class="swiper-pagination !bottom-0"></div>
-            </div>
             </div>
         </section>
-
         <section class="max-w-7xl mx-auto px-4 pb-16">
 
-    <div class="relative overflow-hidden rounded-[45px] bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+                <div class="relative overflow-hidden rounded-[2.5rem] bg-slate-950/90 backdrop-blur-xl border border-emerald-500/10 shadow-[0_0_50px_rgba(16,185,129,0.1)] group/card">
+                <!-- Glowing decorative background circles -->
+                <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[140px] transition-transform duration-1000 group-hover/card:scale-110 pointer-events-none"></div>
+                <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-emerald-600/10 rounded-full blur-[140px] pointer-events-none"></div>
 
-        <!-- Glow -->
-        <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-emerald-500/20 blur-[140px] rounded-full"></div>
-        <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-emerald-500/10 blur-[140px] rounded-full"></div>
+                <!-- Animated Background Glow -->
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-emerald-500/5 opacity-50 pointer-events-none"></div>
 
-        <!-- Content -->
-        <div class="px-8 md:px-16 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-
-            <!-- LEFT -->
-            <div class="relative z-10 lg:w-2/3 text-center lg:text-left">
-
-                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/10 text-emerald-300 text-xs font-bold tracking-[3px] uppercase mb-6">
-                    <i class="fa-solid fa-gift"></i>
-                    Special Promotion
-                </div>
-
-                <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
-                    Amazing Deals &
-                    <span class="bg-gradient-to-r from-perodua to-cyan-400 bg-clip-text text-transparent">
-                        Free Gifts
-                    </span>
-                </h2>
-
-                <p class="text-slate-300 mt-6 text-lg max-w-2xl">
-                    Every Perodua car booking with Ahmad Farhan will receive exclusive free gifts.
-                    We also accept <span class="text-white font-bold bg-emerald-500/20 px-2 py-1 rounded-lg">TRADE-IN</span>
-                    with high value for your old car.
-                </p>
-
-                <!-- Tags -->
-                <div class="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
-
-                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
-                        🎁 Free Gifts
-                    </span>
-
-                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
-                        🚗 Trade-In Available
-                    </span>
-
-                    <span class="px-5 py-2 rounded-full bg-white/5 text-emerald-300 text-sm">
-                        ⚡ Fast Approval
-                    </span>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT -->
-            <div class="relative z-10 lg:w-1/3 flex justify-center lg:justify-end">
-
-                <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua."
-                   class="group relative w-full sm:w-auto flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-400 to-emerald-600 text-white font-black py-5 px-10 rounded-full shadow-[0_25px_80px_rgba(16,185,129,0.45)] hover:scale-105 transition-all duration-500">
-
-                    <i class="fa-brands fa-whatsapp text-3xl group-hover:rotate-12 transition"></i>
-
-                    <div class="text-left">
-                        <div class="text-xs opacity-80">WhatsApp Now</div>
-                        <div class="text-lg">019-365 0861</div>
+                <div class="px-8 md:px-16 py-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
+                    <!-- LEFT: Content -->
+                    <div class="lg:w-2/3 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold tracking-[0.2em] uppercase mb-2 animate-pulse">
+                            <i class="fa-solid fa-gift"></i>
+                            Special Promotion
+                        </div>
+                        
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                            Amazing Deals <br class="hidden sm:inline">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500">
+                                & Free Gifts
+                            </span>
+                        </h2>
+                        
+                        <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl">
+                            Every Perodua car booking with <span class="text-emerald-400 font-bold">Ahmad Farhan</span> will receive exclusive free gifts. We also accept <span class="inline-block text-white font-extrabold bg-gradient-to-r from-emerald-500 to-teal-500 px-3.5 py-1 rounded-xl shadow-md shadow-emerald-500/20">TRADE-IN</span> with high value for your old car.
+                        </p>
+                        
+                        <!-- Uiverse Glassmorphism Tags -->
+                        <div class="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
+                            <div class="flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-white/5 border border-white/5 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition duration-300">
+                                <span class="text-lg">🎁</span>
+                                <span class="text-slate-300 text-sm font-semibold">Free Gifts</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-white/5 border border-white/5 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition duration-300">
+                                <span class="text-lg">🚗</span>
+                                <span class="text-slate-300 text-sm font-semibold">Trade-In Available</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-white/5 border border-white/5 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition duration-300">
+                                <span class="text-lg">⚡</span>
+                                <span class="text-slate-300 text-sm font-semibold">Fast Approval</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- shine -->
-                    <span class="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-100 transition"></span>
-
-                </a>
-
+                    
+                    <!-- RIGHT: Uiverse Button -->
+                    <div class="lg:w-1/3 flex justify-center lg:justify-end w-full">
+                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua." 
+                           class="relative overflow-hidden flex items-center gap-5 bg-slate-900 border-2 border-emerald-500 text-white font-extrabold py-5 px-8 rounded-3xl shadow-[0_0_30px_rgba(16,185,129,0.15)] hover:shadow-[0_0_50px_rgba(16,185,129,0.35)] transition duration-500 group/btn w-full sm:w-auto">
+                            <!-- Button Hover Overlay -->
+                            <div class="absolute inset-0 bg-emerald-500 opacity-0 group-hover/btn:opacity-10 transition duration-300"></div>
+                            
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 group-hover/btn:scale-110 group-hover/btn:rotate-6 transition duration-300 shadow-md">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            
+                            <div class="text-left">
+                                <p class="text-[9px] text-emerald-400 font-extrabold uppercase tracking-widest leading-none mb-1">WhatsApp Now</p>
+                                <p class="text-lg font-black text-white leading-none">019-365 0861</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
-    </div>
 
 </section>
     </main>
 
     <!-- Swiper JS & Visualizer Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
 
-<footer class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white mt-auto">
+        // Function untuk penukar warna kereta (Visualizer)
+        function changeCarColor(colorName, imageSrc, colorHex, buttonEl) {
+            document.getElementById('main-car-image').src = imageSrc;
+            document.getElementById('color-name-display').innerText = colorName;
+            
+            const indicator = document.getElementById('color-indicator');
+            indicator.style.backgroundColor = colorHex;
+            indicator.style.color = colorHex;
 
+            // Reset semua border button warna
+            document.querySelectorAll('.color-swatch-btn').forEach(btn => {
+                btn.classList.remove('border-emerald-300', 'shadow-[0_8px_20px_rgba(16,185,129,0.1)]', 'ring-2', 'ring-emerald-300/30');
+                btn.classList.add('border-slate-100', 'bg-slate-50/50');
+            });
 
+            // Set active style pada button yang ditekan
+            buttonEl.classList.remove('border-slate-100', 'bg-slate-50/50');
+            buttonEl.classList.add('border-emerald-300', 'shadow-[0_8px_20px_rgba(16,185,129,0.1)]', 'ring-2', 'ring-emerald-300/30');
+        }
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+    </section>
+
+   <footer class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950 text-white mt-auto">
+
+```
 <!-- Background Glow -->
-<div class="absolute top-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
-<div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+<div class="absolute top-0 left-0 w-96 h-96 bg-perodua/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px]"></div>
 
 <div class="relative max-w-7xl mx-auto px-6 py-20">
 
@@ -589,13 +719,13 @@
 
             <div class="inline-flex items-center gap-3 mb-6">
 
-                <div class="w-12 h-12 rounded-2xl bg-gradient-to-r from-perodua to-perodua flex items-center justify-center">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-r from-perodua to-peroduaDark flex items-center justify-center">
                     <i class="fa-solid fa-car-side text-white"></i>
                 </div>
 
                 <div>
-                    <h3 class="font-black text-xl">Farhan Perodua</h3>
-                    <p class="text-emerald-300 text-sm">Authorized Sales Advisor</p>
+                    <h3 class="font-black text-xl">Ahmad Farhan Perodua</h3>
+                    <p class="text-perodua text-sm">Authorized Sales Advisor</p>
                 </div>
 
             </div>
@@ -617,13 +747,13 @@
 
             <ul class="space-y-3 text-slate-400">
 
-                <li><a href="ativa.html" class="hover:text-emerald-300 transition">Perodua Ativa</a></li>
-                <li><a href="myvi.html" class="hover:text-emerald-300 transition">Perodua Myvi</a></li>
-                <li><a href="aruz.html" class="hover:text-emerald-300 transition">Perodua Aruz</a></li>
-                <li><a href="axia.html" class="hover:text-emerald-300 transition">Perodua Axia</a></li>
-                <li><a href="bezza.html" class="hover:text-emerald-300 transition">Perodua Bezza</a></li>
-                <li><a href="alza.html" class="hover:text-emerald-300 transition">Perodua Alza</a></li>
-                <li><a href="traz.html" class="hover:text-emerald-300 transition">Perodua Traz</a></li>
+                <li><a href="ativa.html" class="hover:text-perodua transition">Perodua Ativa</a></li>
+                <li><a href="myvi.html" class="hover:text-perodua transition">Perodua Myvi</a></li>
+                <li><a href="aruz.html" class="hover:text-perodua transition">Perodua Aruz</a></li>
+                <li><a href="axia.html" class="hover:text-perodua transition">Perodua Axia</a></li>
+                <li><a href="bezza.html" class="hover:text-perodua transition">Perodua Bezza</a></li>
+                <li><a href="alza.html" class="hover:text-perodua transition">Perodua Alza</a></li>
+                <li><a href="traz.html" class="hover:text-perodua transition">Perodua Traz</a></li>
 
             </ul>
 
@@ -641,7 +771,7 @@
                 <div class="flex gap-4">
 
                     <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
-                        <i class="fa-solid fa-location-dot text-perodua"></i>
+                        <i class="fa-solid fa-location-dot text-emerald-400"></i>
                     </div>
 
                     <p class="text-slate-400 text-sm leading-relaxed">
@@ -655,7 +785,7 @@
                 <div class="flex gap-4 items-center">
 
                     <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
-                        <i class="fa-solid fa-phone text-perodua"></i>
+                        <i class="fa-solid fa-phone text-emerald-400"></i>
                     </div>
 
                     <p class="text-slate-400">
@@ -750,57 +880,9 @@
                 </div>
             </div>
         </div>
-        </div>
 
     </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-        // Initialize Swiper
-        const swiper = // Initialize Swiper with autoHeight to prevent layout cutoffs in mobile view
-        const swiper = // Initialize Swiper with autoHeight and observers to prevent layout cutoffs
-        const swiper = // Initialize Swiper with autoHeight and observers (loop disabled to prevent height conflicts on cloned slides)
-        const swiper = new Swiper('.mySwiper', {
-            loop: false,
-            autoHeight: true,
-            observer: true,
-            observeParents: true,
-            updateOnImagesReady: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
 
-        // Function untuk penukar warna kereta (Visualizer)
-        function changeCarColor(colorName, imageSrc, colorHex, buttonEl) {
-            document.getElementById('main-car-image').src = imageSrc;
-            document.getElementById('color-name-display').innerText = colorName;
-            
-            const indicator = document.getElementById('color-indicator');
-            indicator.style.backgroundColor = colorHex;
-            indicator.style.color = colorHex;
 
-            // Reset semua border button warna
-            document.querySelectorAll('.color-swatch-btn').forEach(btn => {
-                btn.classList.remove('border-emerald-300', 'shadow-[0_8px_20px_rgba(14,165,233,0.1)]', 'ring-2', 'ring-emerald-300/30');
-                btn.classList.add('border-slate-100', 'bg-slate-50/50');
-            });
 
-            // Set active style pada button yang ditekan
-            buttonEl.classList.remove('border-slate-100', 'bg-slate-50/50');
-            buttonEl.classList.add('border-emerald-300', 'shadow-[0_8px_20px_rgba(14,165,233,0.1)]', 'ring-2', 'ring-emerald-300/30');
-        }
-
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if(menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-    </script>
-</body>
-</html>

@@ -27,6 +27,7 @@ def get_navbar(prefix, active_page):
     feedback_path = f"{prefix}feedback.html"
     about_path = f"{prefix}about.html"
     logo_path = f"{prefix}assets/img/logo-perodua.png"
+    our_cars_path = f"{prefix}models/our-cars.html" if not prefix else "our-cars.html"
     
     alza_path = f"{prefix}models/alza.html" if not prefix else "alza.html"
     ativa_path = f"{prefix}models/ativa.html" if not prefix else "ativa.html"
@@ -41,7 +42,7 @@ def get_navbar(prefix, active_page):
         <span class="inline-flex items-center mr-4">
             <i class="fa-solid fa-location-dot text-perodua mr-1.5 animate-pulse"></i> Glenmarie Branch
         </span>
-        <a href="https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
+        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
             <i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5 text-sm"></i> Contact Advisor
         </a>
     </div>
@@ -65,10 +66,10 @@ def get_navbar(prefix, active_page):
                     <a href="{home_path}" class="{get_desktop_class('home')}">Home</a>
 
                     <div class="relative group">
-                        <button class="{cars_btn_class}">
+                        <a href="{our_cars_path}" class="{cars_btn_class}">
                             <span>Our Cars</span>
                             <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
-                        </button>
+                        </a>
                         <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 transform scale-95 group-hover:scale-100">
                             <a href="{alza_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> NEW PERODUA ALZA</a>
                             <a href="{ativa_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ATIVA</a>
@@ -83,9 +84,9 @@ def get_navbar(prefix, active_page):
                     <a href="{feedback_path}" class="{get_desktop_class('feedback')}">Feedback Customer</a>
                     <a href="{about_path}" class="{get_desktop_class('about')}">About Me</a>
 
-                    <a href="https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
                         class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 transition duration-200 transform hover:-translate-y-0.5">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>017-650 3339</span>
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>019-365 0861</span>
                     </a>
                 </nav>
 
@@ -115,8 +116,8 @@ def get_navbar(prefix, active_page):
                 <a href="{bezza_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
                 <a href="{traz_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
             </div>
-            <a href="https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
-                <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Akmal</span>
+            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
             </a>
         </div>
     </header>"""

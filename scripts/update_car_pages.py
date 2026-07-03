@@ -1,7 +1,7 @@
-﻿import re
+import re
 from pathlib import Path
 
-BASE_DIR = Path("c:/Users/user/Downloads/public_html")
+BASE_DIR = Path("c:/xampps/htdocs/public_html")
 FILES = ["bezza.html", "ativa.html", "aruz.html", "alza.html", "myvi.html", "traz.html"]
 
 TAILWIND_CONFIG = """<script>
@@ -9,8 +9,8 @@ TAILWIND_CONFIG = """<script>
             theme: {
                 extend: {
                     colors: {
-                        perodua: '#38bdf8',
-                        peroduaDark: '#0284c7',
+                        perodua: '#009639',
+                        peroduaDark: '#007a2d',
                         brandSlate: '#0f172a'
                     }
                 }
@@ -20,7 +20,7 @@ TAILWIND_CONFIG = """<script>
 
 HEADER_HTML = """    <div class=\"bg-brandSlate text-white text-xs py-2 px-4 text-center sm:text-right sm:px-8 font-medium\">
         <i class=\"fa-solid fa-location-dot text-perodua mr-1\"></i> Glenmarie Branch
-        <a href=\"https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" class=\"hover:text-perodua ml-2\"><i class=\"fa-brands fa-whatsapp text-emerald-400 mr-1\"></i> Contact Sales Advisor</a>
+        <a href=\"https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" class=\"hover:text-perodua ml-2\"><i class=\"fa-brands fa-whatsapp text-emerald-400 mr-1\"></i> Contact Sales Advisor</a>
     </div>
 
     <header class=\"bg-white shadow-md sticky top-0 z-50\">
@@ -41,10 +41,10 @@ HEADER_HTML = """    <div class=\"bg-brandSlate text-white text-xs py-2 px-4 tex
                     <a href=\"index.html\" class=\"text-slate-600 hover:text-perodua font-medium\">Home</a>
 
                     <div class=\"relative group\">
-                        <button class=\"text-perodua font-bold border-b-2 border-perodua flex items-center space-x-1 py-2 focus:outline-none transition-colors\">
+                        <a href=\"our-cars.html\" class=\"text-perodua font-bold border-b-2 border-perodua flex items-center space-x-1 py-2 focus:outline-none transition-colors\">
                             <span>Our Cars</span>
                             <i class=\"fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180\"></i>
-                        </button>
+                        </a>
                         <div class=\"absolute left-0 mt-0 w-60 bg-white border border-slate-100 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2\">
                             <a href=\"alza.html\" class=\"flex items-center px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-perodua\"><i class=\"fa-solid fa-car-side mr-3 text-slate-400\"></i> NEW PERODUA ALZA</a>
                             <a href=\"ativa.html\" class=\"flex items-center px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-perodua\"><i class=\"fa-solid fa-car-side mr-3 text-slate-400\"></i> PERODUA ATIVA</a>
@@ -59,9 +59,9 @@ HEADER_HTML = """    <div class=\"bg-brandSlate text-white text-xs py-2 px-4 tex
                     <a href=\"feedback.html\" class=\"text-slate-600 hover:text-perodua font-medium\">Feedback Customer</a>
                     <a href=\"about.html\" class=\"text-slate-600 hover:text-perodua font-medium\">About Me</a>
 
-                    <a href=\"https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" target=\"_blank\"
+                    <a href=\"https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" target=\"_blank\"
                         class=\"bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-sm transition\">
-                        <i class=\"fa-brands fa-whatsapp text-lg\"></i> <span>017-650 3339</span>
+                        <i class=\"fa-brands fa-whatsapp text-lg\"></i> <span>019-365 0861</span>
                     </a>
                 </nav>
 
@@ -90,8 +90,8 @@ HEADER_HTML = """    <div class=\"bg-brandSlate text-white text-xs py-2 px-4 tex
                 <a href=\"bezza.html\" class=\"bg-slate-50 p-3 rounded-xl text-xs font-semibold text-center text-slate-700 block hover:bg-perodua hover:text-white\">Bezza</a>
                 <a href=\"traz.html\" class=\"bg-slate-50 p-3 rounded-xl text-xs font-semibold text-center text-slate-700 block hover:bg-perodua hover:text-white\">Traz</a>
             </div>
-            <a href=\"https://wa.me/60176503339?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" class=\"w-full bg-emerald-500 text-white font-bold py-3 rounded-xl flex items-center justify-center space-x-2 shadow-md\">
-                <i class=\"fa-brands fa-whatsapp text-lg\"></i> <span>Contact Akmal</span>
+            <a href=\"https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F\" class=\"w-full bg-emerald-500 text-white font-bold py-3 rounded-xl flex items-center justify-center space-x-2 shadow-md\">
+                <i class=\"fa-brands fa-whatsapp text-lg\"></i> <span>Contact Farhan</span>
             </a>
         </div>
     </header>"""

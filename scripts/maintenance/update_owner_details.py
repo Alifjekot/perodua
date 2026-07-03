@@ -28,7 +28,7 @@ def replace_owner_details(content, is_model_page):
                 Follow Ahmad Farhan
             </h4>
             <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10">
-                <img src="{prefix}customer/akmal.png"
+                <img src="{prefix}customer/farhan.png"
                      class="rounded-2xl w-full object-cover"
                      alt="Ahmad Farhan"
                      onerror="this.src='https://placehold.co/300x300/1e293b/ffffff?text=Ahmad+Farhan'">

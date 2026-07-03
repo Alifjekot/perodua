@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Cars - Ahmad Farhan Sales Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brandSlate to-slate-900 text-white text-xs py-2.5 px-4 text-center sm:text-right sm:px-8 font-medium tracking-wide shadow-sm">
+        <span class="inline-flex items-center mr-4">
+            <i class="fa-solid fa-location-dot text-perodua mr-1.5 animate-pulse"></i> Glenmarie Branch
+        </span>
+        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
+            <i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5 text-sm"></i> Contact Advisor
+        </a>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="../index.html" class="flex-shrink-0 transition-transform hover:scale-105 duration-200">
+                        <img src="../assets/img/logo-perodua.png" alt="Perodua Logo" class="h-10 w-auto object-contain"
+                            onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Perodua_logo.svg/512px-Perodua_logo.svg.png'">
+                    </a>
+                    <div class="hidden lg:block pl-4 border-l-2 border-slate-200">
+                        <span class="font-black text-lg block text-slate-900 tracking-tight leading-none">Glenmarie Sales</span>
+                        <span class="text-[10px] text-peroduaDark font-bold uppercase tracking-widest mt-1 block">Authorized Branch</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="../index.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Home</a>
+
+                    <div class="relative group">
+                        <a href="our-cars.html" class="text-peroduaDark font-bold text-sm tracking-wide flex items-center space-x-1 py-2 focus:outline-none transition-colors duration-200 border-b-2 border-peroduaDark">
+                            <span>Our Cars</span>
+                            <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 transform scale-95 group-hover:scale-100">
+                            <a href="alza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> NEW PERODUA ALZA</a>
+                            <a href="ativa.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ATIVA</a>
+                            <a href="myvi.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA MYVI</a>
+                            <a href="aruz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA ARUZ</a>
+                            <a href="axia.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA AXIA</a>
+                            <a href="bezza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA BEZZA</a>
+                            <a href="traz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA TRAZ</a>
+                        </div>
+                    </div>
+
+                    <a href="../feedback.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Feedback Customer</a>
+                    <a href="../about.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">About Me</a>
+
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+                        class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 transition duration-200 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>019-365 0861</span>
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-800 p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors focus:outline-none">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-600">Menu</span>
+                            <i class="fa-solid fa-bars text-lg text-peroduaDark"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl transition-all duration-300 animate-fadeIn">
+            <a href="../index.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Home</a>
+            <a href="../feedback.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">Feedback Customer</a>
+            <a href="../about.html" class="block py-2 text-slate-600 hover:text-peroduaDark font-bold border-b border-slate-50">About Me</a>
+            <div class="text-[10px] text-slate-400 font-bold tracking-widest uppercase pt-2">Car Model Options</div>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="alza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Alza</a>
+                <a href="ativa.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Ativa</a>
+                <a href="myvi.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Myvi</a>
+                <a href="aruz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Aruz</a>
+                <a href="axia.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Axia</a>
+                <a href="bezza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
+                <a href="traz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
+            </div>
+            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Showcase -->
+        <section class="relative overflow-hidden py-20 bg-slate-50 border-b border-slate-100">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(16,185,129,0.12),transparent_45%),radial-gradient(circle_at_bottom_right,_rgba(100,116,139,0.08),transparent_50%)] pointer-events-none"></div>
+            <div class="relative z-20 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex px-4 py-2 border border-emerald-500/30 rounded-full text-emerald-800 text-xs font-semibold tracking-widest bg-emerald-50/50 shadow-sm uppercase">
+                        Our Cars Collection
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+                        Premium Perodua Models <br>
+                        <span class="text-perodua">With Transparent Prices</span>
+                    </h1>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Choose your dream car from our wide range of brand new Perodua models. We provide comprehensive pricing lists, variant specifications, interactive visualizers, and quick financing options.
+                    </p>
+                </div>
+                <div class="relative flex justify-center">
+                    <div class="absolute w-[360px] h-[360px] bg-emerald-500/10 rounded-full blur-3xl -z-10"></div>
+                    <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-white via-slate-50 to-emerald-50 p-6 w-full max-w-md">
+                        <img src="../assets/img/qve.png" class="w-full h-[240px] sm:h-[300px] object-contain drop-shadow-[0_15px_30px_rgba(15,23,42,0.12)]" alt="Perodua Fleet">
+                        <div class="absolute top-5 left-5 bg-perodua text-white text-xs font-bold px-3.5 py-1 rounded-full shadow">
+                            FLEET SHOWROOM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Grid -->
+        <section class="py-20 bg-brandSlate relative overflow-hidden">
+            <!-- Glows -->
+            <div class="absolute top-[-200px] right-[-200px] w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none"></div>
+            <div class="absolute bottom-[-200px] left-[-200px] w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-6 mb-16 text-center">
+                <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">Our Models</h2>
+                <p class="text-slate-400 mt-4 text-sm md:text-base max-w-2xl mx-auto">Explore all certified brand new Perodua models with complete pricing specifications and instant video previews.</p>
+                <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-perodua mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-6">
+                <!-- Axia Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logoaxia.png" alt="Axia Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Axia'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://www.youtube.com/watch?v=AZaCxeGk6H0" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/AZaCxeGk6H0/hqdefault.jpg" alt="Axia Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Axia Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 21,740.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="axia.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Axia" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bezza Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logobezza.png" alt="Bezza Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Bezza'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/EauSEIQSQGY?si=G4NTa_45tHnv0RWj" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/EauSEIQSQGY/hqdefault.jpg" alt="Bezza Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Bezza Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 34,320.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="bezza.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Bezza" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Myvi Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logomyvi.png" alt="Myvi Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Myvi'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/bYJlQFeSXK4?si=V3GhkGhM0I_ErBWB" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/bYJlQFeSXK4/hqdefault.jpg" alt="Myvi Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Myvi Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 46,190.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="myvi.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Myvi" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ativa Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logoativa.png" alt="Ativa Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Ativa'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/5U4wcWXlA_Q?si=TZxn525FzeoUYmIM" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/5U4wcWXlA_Q/hqdefault.jpg" alt="Ativa Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Ativa Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 62,240.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="ativa.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Ativa" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Alza Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logoalza.png" alt="Alza Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Alza'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/1ED91CKybpY?si=Zq-hGV5ATl8R1JnB" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/1ED91CKybpY/hqdefault.jpg" alt="Alza Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Alza Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 62,170.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="alza.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Alza" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Aruz Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logoaruz.png" alt="Aruz Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Aruz'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/v1cFRZIqmKQ?si=Oes8p3Arjk0IMNQ0" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/v1cFRZIqmKQ/hqdefault.jpg" alt="Aruz Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Aruz Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 72,540.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="aruz.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Aruz" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Traz Card -->
+                <article class="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl flex flex-col transition hover:-translate-y-2 duration-300">
+                    <div class="h-16 flex items-center justify-center bg-white border-b border-slate-100 p-2">
+                        <img src="../gambar/logotraz.png" alt="Traz Logo" class="h-8 object-contain" onerror="this.src='https://placehold.co/100x32/ffffff/000000?text=Traz'">
+                    </div>
+                    <div class="relative w-full h-48 bg-black">
+                        <a href="https://youtu.be/G_olyQeaETU?si=oaoYXsMAKrgy1-Zc" target="_blank" class="block w-full h-full relative group">
+                            <img src="https://img.youtube.com/vi/G_olyQeaETU/hqdefault.jpg" alt="Traz Video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-perodua flex items-center justify-center text-black shadow-lg transform group-hover:scale-110 transition duration-300">
+                                    <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-center">
+                        <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Traz Drive</p>
+                        <p class="text-slate-400 text-sm mb-6 flex-grow">Starts from <span class="text-white font-bold block text-lg mt-1">RM 75,780.00</span></p>
+                        <div class="grid gap-3">
+                            <a href="traz.html" class="block rounded-xl border border-slate-700 text-slate-300 font-bold py-3 hover:bg-slate-800 hover:text-white transition">View More</a>
+                            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Traz" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.25)]">Booking Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950 text-white mt-auto">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-20">
+            <!-- Top Area -->
+            <div class="grid lg:grid-cols-4 gap-10">
+                <!-- Brand -->
+                <div>
+                    <div class="inline-flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-r from-perodua to-perodua flex items-center justify-center">
+                            <i class="fa-solid fa-car-side text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-xl">Farhan Perodua</h3>
+                            <p class="text-emerald-300 text-sm">Authorized Sales Advisor</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Helping customers own their dream Perodua with an easy process,
+                        fast and reliable. From booking to car delivery,
+                        Everything is handled professionally.
+                    </p>
+                </div>
+
+                <!-- Cars -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">
+                        Perodua Models
+                    </h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="ativa.html" class="hover:text-emerald-300 transition">Perodua Ativa</a></li>
+                        <li><a href="myvi.html" class="hover:text-emerald-300 transition">Perodua Myvi</a></li>
+                        <li><a href="aruz.html" class="hover:text-emerald-300 transition">Perodua Aruz</a></li>
+                        <li><a href="axia.html" class="hover:text-emerald-300 transition">Perodua Axia</a></li>
+                        <li><a href="bezza.html" class="hover:text-emerald-300 transition">Perodua Bezza</a></li>
+                        <li><a href="alza.html" class="hover:text-emerald-300 transition">Perodua Alza</a></li>
+                        <li><a href="traz.html" class="hover:text-emerald-300 transition">Perodua Traz</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">
+                        Contact Information
+                    </h4>
+                    <div class="space-y-5">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                                <i class="fa-solid fa-location-dot text-perodua"></i>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                14 & 16, Jalan Juruhebah U1/50,<br>
+                                Temasya Industrial Park,<br>
+                                40150 Shah Alam, Selangor
+                            </p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                                <i class="fa-solid fa-phone text-perodua"></i>
+                            </div>
+                            <p class="text-slate-400">
+                                +60 19-365 0861
+                            </p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            </div>
+                            <p class="text-slate-400">
+                                WhatsApp Available 24/7
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Card -->
+        <div>
+            <h4 class="text-lg font-bold mb-6 text-white">
+                Follow Ahmad Farhan
+            </h4>
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10">
+                <img src="../customer/farhan.png"
+                     class="rounded-2xl w-full object-cover"
+                     alt="Ahmad Farhan"
+                     onerror="this.src='https://placehold.co/300x300/1e293b/ffffff?text=Ahmad+Farhan'">
+                <div class="mt-5">
+                    <h5 class="font-bold text-lg text-center">
+                        Ahmad Farhan
+                    </h5>
+                    <p class="text-slate-400 text-sm mt-1 mb-5 text-center">
+                        Sales Advisor • Perodua Glenmarie
+                    </p>
+                    <ul class="example-2 mt-4">
+                      <li class="icon-content">
+                        <a
+                          data-social="tiktok"
+                          aria-label="TikTok"
+                          href="https://vt.tiktok.com/ZSCu9fLnT/"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <div class="tooltip">TikTok</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="instagram"
+                          aria-label="Instagram"
+                          href="https://www.instagram.com/farhann_1311?igsh=MW5lZHlpbTM5ams2cw=="
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="facebook"
+                          aria-label="Facebook"
+                          href="https://www.facebook.com/share/1DLLEJvmoB/?mibextid=wwXIfr"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                      </li>
+                      <li class="icon-content">
+                        <a
+                          data-social="whatsapp"
+                          aria-label="WhatsApp"
+                          href="https://wa.me/60193650861"
+                          target="_blank"
+                        >
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <div class="tooltip">WhatsApp</div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
