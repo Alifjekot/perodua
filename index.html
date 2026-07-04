@@ -12,6 +12,19 @@
 
     <script src="assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        @keyframes hoverFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-12px) scale(1.03); }
+        }
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 40s linear infinite;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
@@ -21,7 +34,7 @@
         <span class="inline-flex items-center mr-4">
             <i class="fa-solid fa-location-dot text-perodua mr-1.5 animate-pulse"></i> Glenmarie Branch
         </span>
-        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
+        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih." class="inline-flex items-center text-slate-200 hover:text-perodua ml-2 transition-colors duration-200">
             <i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5 text-sm"></i> Contact Advisor
         </a>
     </div>
@@ -57,13 +70,14 @@
                             <a href="models/axia.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA AXIA</a>
                             <a href="models/bezza.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA BEZZA</a>
                             <a href="models/traz.html" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA TRAZ</a>
+                           
                         </div>
                     </div>
 
                     <a href="feedback.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">Feedback Customer</a>
                     <a href="about.html" class="text-slate-600 hover:text-peroduaDark font-semibold text-sm tracking-wide transition-colors duration-200">About Me</a>
 
-                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih." target="_blank"
                         class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl flex items-center space-x-2 shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 transition duration-200 transform hover:-translate-y-0.5">
                         <i class="fa-brands fa-whatsapp text-lg"></i> <span>019-365 0861</span>
                     </a>
@@ -94,8 +108,9 @@
                 <a href="models/axia.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Axia</a>
                 <a href="models/bezza.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
                 <a href="models/traz.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
+                <a href="models/qve.html" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">QVE</a>
             </div>
-            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
+            <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih." class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
                 <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
             </a>
         </div>
@@ -121,43 +136,77 @@
 </section>
                 
                
-    <!-- Trade In & Car Models Section -->
-    <!-- Mockup Hero: Dark Curved Gradient Spotlight -->
-    <section class="relative bg-[#0b1329] pt-24 pb-32 overflow-hidden">
-        <!-- Curved Background Path -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0b1329] to-[#0f172a] pointer-events-none"></div>
-        <div class="absolute bottom-0 inset-x-0 h-40 bg-[radial-gradient(ellipse_at_bottom,_rgba(56,189,248,0.15),_transparent_60%)] pointer-events-none"></div>
+    <!-- Redesigned Hero: Premium Asymmetrical Cyber-Spotlight -->
+    <section class="relative bg-slate-950 pt-28 pb-36 overflow-hidden">
+        <!-- Mesh Background Grid -->
+        <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500 via-teal-900 to-transparent"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30"></div>
         
-        <!-- Curved shape overlay at bottom to transition to white -->
-        <div class="absolute bottom-0 left-0 right-0 h-24 bg-white" style="clip-path: ellipse(70% 100% at 50% 100%);"></div>
+        <!-- Ambient Neon Glows -->
+        <div class="absolute top-[-10%] right-[-10%] w-[600px] h-[600px] bg-emerald-500/20 rounded-full blur-[160px] pointer-events-none"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+        
+        <!-- Wave Transition SVG to next section (Smooth curve instead of generic ellipse) -->
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-20">
+            <svg class="relative block w-full h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-white"></path>
+            </svg>
+        </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
-            <!-- Left Info -->
-            <div class="lg:col-span-6 space-y-8 text-center lg:text-left">
-                <span class="inline-block text-xs font-black tracking-[0.4em] text-perodua uppercase">
-                    SPOTLIGHT PREMIER
-                </span>
-                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">
-                    Find Your <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-perodua to-emerald-400">Dream Car</span>
+            <!-- Left Info - Housed in a floating premium glass panel -->
+            <div class="lg:col-span-6 space-y-8 text-center lg:text-left bg-white/[0.02] backdrop-blur-2xl border border-white/10 rounded-[3rem] p-8 md:p-12 shadow-2xl relative">
+                <!-- Top Decorative Badge -->
+                <div class="absolute -top-3 left-6 lg:left-12 bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black text-[10px] uppercase tracking-[0.25em] px-4 py-1.5 rounded-full shadow-lg shadow-emerald-500/20">
+                    Spotlight Premier
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.1] tracking-tight uppercase">
+                    Discover <br class="hidden sm:inline">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+                        Perodua QVE
+                    </span>
                 </h1>
-                <p class="text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed text-base md:text-lg">
-                    Experience a new level of refinement, comfort, and intelligent engineering. 
-                    The brand new **Perodua QVE** offers a premium modern luxury driving experience designed for your lifestyle.
+                
+                <p class="text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed text-sm md:text-base">
+                    Experience a new level of refinement, comfort, and intelligent engineering. The brand new <span class="text-white font-bold">Perodua QVE</span> offers a premium modern luxury driving experience designed for your lifestyle.
                 </p>
+
+                <!-- Mini Tech Specs inside Hero -->
+                <div class="grid grid-cols-3 gap-4 pt-2 max-w-md mx-auto lg:mx-0">
+                    <div class="bg-white/5 border border-white/5 rounded-2xl p-3 text-center">
+                        <p class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Range</p>
+                        <p class="text-sm font-black text-emerald-400 mt-1">450 KM</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/5 rounded-2xl p-3 text-center">
+                        <p class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Battery</p>
+                        <p class="text-sm font-black text-emerald-400 mt-1">68 kWh</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/5 rounded-2xl p-3 text-center">
+                        <p class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Top Speed</p>
+                        <p class="text-sm font-black text-emerald-400 mt-1">160 km/h</p>
+                    </div>
+                </div>
+                
                 <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
-                    <a href="models/qve.html" class="uiverse-btn-glow px-8 py-3.5 rounded-xl bg-white text-slate-900 font-bold hover:shadow-lg hover:shadow-white/10 transition">
+                    <a href="models/qve.html" class="flex items-center justify-center bg-white text-slate-900 font-black px-8 py-4 rounded-2xl hover:bg-slate-100 transition shadow-lg shadow-white/5 active:scale-95 duration-200 text-sm">
                         View Details
                     </a>
-                    <a href="https://wa.me/60193650861" class="uiverse-btn-glow px-8 py-3.5 rounded-xl bg-gradient-to-r from-perodua to-peroduaDark text-white font-bold hover:shadow-lg hover:shadow-emerald-500/20 transition">
+                    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih." class="flex items-center justify-center bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 font-black px-8 py-4 rounded-2xl hover:brightness-110 transition shadow-lg shadow-emerald-500/20 active:scale-95 duration-200 text-sm">
                         Book Now
                     </a>
                 </div>
             </div>
-            <!-- Right Perspective Car image -->
-            <div class="lg:col-span-6 flex justify-center relative">
-                <div class="absolute w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10"></div>
-                <img src="assets/img/qve.png" alt="Perodua QVE" class="w-full max-w-lg h-auto object-contain drop-shadow-[0_20px_50px_rgba(56,189,248,0.3)] animate-pulse" style="animation-duration: 4s;">
+            
+            <!-- Right Perspective Car image - Housed in an futuristic orb container -->
+            <div class="lg:col-span-6 flex justify-center relative group">
+                <!-- Large Rotating Sci-Fi Ring Backdrop -->
+                <div class="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] rounded-full border border-dashed border-emerald-500/30 animate-spin-slow pointer-events-none"></div>
+                <div class="absolute w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] rounded-full border border-double border-cyan-500/20 pointer-events-none"></div>
+                <div class="absolute w-80 h-80 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+                
+                <!-- Floating Car Image -->
+                <img src="assets/img/qve.png" alt="Perodua QVE" class="w-full max-w-lg h-auto object-contain drop-shadow-[0_20px_50px_rgba(16,185,129,0.35)] relative z-10 transition duration-700 hover:scale-105 hover:-rotate-1 pointer-events-none" style="animation: hoverFloat 6s ease-in-out infinite;">
             </div>
         </div>
     </section>
@@ -171,19 +220,22 @@
                 <p class="text-slate-500 mt-3 text-sm md:text-base">Filter through our wide selection of certified brand new Perodua models</p>
                 
                 <!-- Category Tabs (Uiverse Selector style) -->
-                <div class="flex flex-wrap justify-center gap-2 mt-8 max-w-2xl mx-auto p-1.5 bg-slate-100 rounded-2xl">
+                <div class="flex flex-wrap justify-center gap-2 mt-8 max-w-4xl mx-auto p-1.5 bg-slate-100 rounded-2xl">
                     <button onclick="filterCars('all')" class="category-tab active px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="all">All Models</button>
-                    <button onclick="filterCars('hatchback')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="hatchback">Hatchback</button>
-                    <button onclick="filterCars('sedan')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="sedan">Sedan</button>
-                    <button onclick="filterCars('suv')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="suv">SUV</button>
-                    <button onclick="filterCars('mpv')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="mpv">MPV</button>
+                    <button onclick="filterCars('axia')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="axia">Axia</button>
+                    <button onclick="filterCars('bezza')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="bezza">Bezza</button>
+                    <button onclick="filterCars('myvi')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="myvi">Myvi</button>
+                    <button onclick="filterCars('ativa')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="ativa">Ativa</button>
+                    <button onclick="filterCars('alza')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="alza">Alza</button>
+                    <button onclick="filterCars('aruz')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="aruz">Aruz</button>
+                    <button onclick="filterCars('traz')" class="category-tab px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900" data-tab="traz">Traz</button>
                 </div>
             </div>
 
             <!-- Video Grid -->
             <div id="cars-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card: Axia -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="hatchback">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="axia">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logoaxia.png" alt="Axia" class="h-8 object-contain">
                     </div>
@@ -206,7 +258,7 @@
                 </div>
 
                 <!-- Card: Bezza -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="sedan">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="bezza">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logobezza.png" alt="Bezza" class="h-8 object-contain">
                     </div>
@@ -220,7 +272,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Bezza Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 34,580.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/bezza.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Bezza" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -229,7 +281,7 @@
                 </div>
 
                 <!-- Card: Myvi -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="hatchback">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="myvi">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logomyvi.png" alt="Myvi" class="h-8 object-contain">
                     </div>
@@ -243,7 +295,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Myvi Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 46,500.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/myvi.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Myvi" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -252,7 +304,7 @@
                 </div>
 
                 <!-- Card: Ativa -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="suv">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="ativa">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logoativa.png" alt="Ativa" class="h-8 object-contain">
                     </div>
@@ -266,7 +318,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Ativa Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 62,500.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/ativa.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Ativa" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -275,7 +327,7 @@
                 </div>
 
                 <!-- Card: Alza -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="mpv">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="alza">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logoalza.png" alt="Alza" class="h-8 object-contain">
                     </div>
@@ -289,7 +341,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Alza Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 62,500.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/alza.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Alza" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -298,7 +350,7 @@
                 </div>
 
                 <!-- Card: Aruz -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="suv">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="aruz">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logoaruz.png" alt="Aruz" class="h-8 object-contain">
                     </div>
@@ -312,7 +364,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Aruz Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 72,900.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/aruz.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Aruz" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -321,7 +373,7 @@
                 </div>
 
                 <!-- Card: Traz -->
-                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="mpv">
+                <div class="car-card uiverse-card flex flex-col relative overflow-hidden rounded-[2rem] border border-slate-800 bg-[#151921] shadow-2xl transition hover:-translate-y-2 duration-300" data-category="traz">
                     <div class="h-16 flex items-center justify-center bg-white border-b border-gray-200">
                         <img src="gambar/logotraz.png" alt="Traz" class="h-8 object-contain">
                     </div>
@@ -335,7 +387,7 @@
                     </div>
                     <div class="p-6 text-center">
                         <p class="text-perodua font-medium text-[10px] uppercase tracking-[0.2em] mb-2">Premium Traz Drive</p>
-                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 22,000.00</span></p>
+                        <p class="text-gray-400 text-sm mb-6">Starts from <span class="text-white font-bold block text-lg">RM 88,000.00</span></p>
                         <div class="grid gap-3">
                             <a href="models/traz.html" class="block rounded-xl border border-gray-700 text-gray-300 font-bold py-3 hover:bg-gray-800 hover:text-white transition">View More</a>
                             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Traz" class="block rounded-xl bg-perodua text-black font-bold py-3 hover:bg-emerald-400 transition shadow-[0_0_15px_rgba(0,150,57,0.3)]">Booking Now</a>
@@ -377,9 +429,7 @@
                 <img src="assets/img/banner.png" alt="Buy Quality Perodua Certified Pre-Owned Vehicles"
                     class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                     onerror="this.src='https://placehold.co/1200x300/0f172a/ffffff?text=Perodua+Certified+Pre-Owned+Vehicles'">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                </div>
+              
             </div>
         </div>
     </section>
@@ -456,7 +506,7 @@
 
                     <!-- BUTTON -->
                     <div class="flex flex-wrap gap-4 mt-10">
-                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20Trade-In%20kenderaan%20saya"
+                        <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih."
                            class="px-10 py-5 rounded-full bg-perodua text-white font-bold hover:scale-105 transition duration-300">
                             Get Trade-In Offer
                         </a>
@@ -661,7 +711,7 @@
                     <span class="text-[10px] uppercase tracking-widest text-perodua font-black">BRANCH EXCLUSIVE</span>
                     <h3 class="text-lg font-black text-white">PSSB Glenmarie</h3>
                 </div>
-                <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20Exclusive%20Protection%20Plan"
+                <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih."
                     class="w-full sm:w-auto text-center rounded-full bg-gradient-to-r from-perodua to-perodua text-slate-900 font-extrabold px-8 py-3.5 hover:from-emerald-400 hover:to-emerald-400 transition shadow-[0_0_20px_rgba(0,150,57,0.25)] text-sm">
                     Contact Now
                 </a>
@@ -838,7 +888,7 @@
                         <a
                           data-social="whatsapp"
                           aria-label="WhatsApp"
-                          href="https://wa.me/60193650861"
+                          href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih."
                           target="_blank"
                         >
                           <div class="filled"></div>
@@ -856,7 +906,7 @@
 
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" target="_blank"
+    <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20dengan%20kereta%20ini.%20Boleh%20saya%20tahu%20maklumat%20lanjut%20mengenai%20harga%2C%20spesifikasi%2C%20promosi%20semasa%2C%20dan%20pilihan%20pinjaman%3F%20Terima%20kasih." target="_blank"
         class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-4 shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] hover:shadow-[0_6px_20px_rgba(16,185,129,0.23)] hover:-translate-y-1 transition-all duration-300 z-50 flex items-center justify-center"
         aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp text-3xl"></i>

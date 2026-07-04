@@ -36,6 +36,7 @@ def get_navbar(prefix, active_page):
     axia_path = f"{prefix}models/axia.html" if not prefix else "axia.html"
     bezza_path = f"{prefix}models/bezza.html" if not prefix else "bezza.html"
     traz_path = f"{prefix}models/traz.html" if not prefix else "traz.html"
+    qve_path = f"{prefix}models/qve.html" if not prefix else "qve.html"
 
     return f"""<!-- Top Announcement Bar -->
     <div class="bg-gradient-to-r from-brandSlate to-slate-900 text-white text-xs py-2.5 px-4 text-center sm:text-right sm:px-8 font-medium tracking-wide shadow-sm">
@@ -78,6 +79,7 @@ def get_navbar(prefix, active_page):
                             <a href="{axia_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA AXIA</a>
                             <a href="{bezza_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA BEZZA</a>
                             <a href="{traz_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA TRAZ</a>
+                            <a href="{qve_path}" class="flex items-center px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 hover:text-peroduaDark rounded-xl mx-2 transition-all"><i class="fa-solid fa-car-side mr-3 text-slate-400 w-5 text-center"></i> PERODUA QVE</a>
                         </div>
                     </div>
 
@@ -115,6 +117,7 @@ def get_navbar(prefix, active_page):
                 <a href="{axia_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Axia</a>
                 <a href="{bezza_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Bezza</a>
                 <a href="{traz_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">Traz</a>
+                <a href="{qve_path}" class="bg-slate-50 p-3 rounded-xl text-xs font-bold text-center text-slate-700 block hover:bg-peroduaDark hover:text-white transition-all">QVE</a>
             </div>
             <a href="https://wa.me/60193650861?text=Hi%2C%20saya%20berminat%20untuk%20membeli%20kereta%20Perodua.%20Boleh%20saya%20dapatkan%20maklumat%20lanjut%20mengenai%20model%20dan%20promosi%20terkini%3F" class="w-full bg-emerald-500 text-white font-bold py-3.5 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/20 active:scale-95 transition-all">
                 <i class="fa-brands fa-whatsapp text-xl"></i> <span>Contact Farhan</span>
