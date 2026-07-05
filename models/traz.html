@@ -745,3 +745,28 @@ function changeCarColor(name, image, color, btn){
 
 
 
+\n
+<script>
+    // Unified Mobile Menu Toggle
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            // override any existing click listeners by cloning
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+            
+            newBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !newBtn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        }
+    });
+</script>

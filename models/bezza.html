@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ms">
 
 <head>
@@ -376,7 +376,7 @@ function changeCarColor(name, image, color, btn){
                             <!-- Image Container -->
                             <div class="relative w-full h-36 bg-slate-950/60 border border-white/5 rounded-2xl p-2 flex items-center justify-center overflow-hidden">
                                 <div class="absolute w-24 h-24 bg-emerald-500/10 rounded-full blur-[40px] -z-10 group-hover:scale-115 transition duration-700 pointer-events-none"></div>
-                                <img src="../gambar/grey bezza.png." alt="BEZZA 1.0 G" class="max-h-full object-contain transition duration-500 group-hover:scale-105 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/151921/ffffff?text=BEZZA+1.0+G';">
+                                <img src="../gambar/grey bezza.png" alt="BEZZA 1.0 G" class="max-h-full object-contain transition duration-500 group-hover:scale-105 relative z-10" onerror="this.src='https://via.placeholder.com/450x280/151921/ffffff?text=BEZZA+1.0+G';">
                             </div>
                             <p class="text-slate-400 text-[11px] font-medium">Affordable • Fuel Saver • Auto Transmission</p>
                         </div>
@@ -923,3 +923,28 @@ function changeCarColor(name, image, color, btn){
 
 
 
+\n
+<script>
+    // Unified Mobile Menu Toggle
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            // override any existing click listeners by cloning
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+            
+            newBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !newBtn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        }
+    });
+</script>
