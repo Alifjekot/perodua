@@ -800,7 +800,7 @@ function changeCarColor(name, image, color, btn){
             indicator.style.color = colorHex;
 
             // Reset semua border button warna
-            document.querySelectorAll('.color-swatch-btn').forEach(btn => {
+            document.querySelectorAll('.color-btn, .color-swatch-btn').forEach(btn => {
                 btn.classList.remove('border-emerald-300', 'shadow-[0_8px_20px_rgba(16,185,129,0.1)]', 'ring-2', 'ring-emerald-300/30');
                 btn.classList.add('border-slate-100', 'bg-slate-50/50');
             });
